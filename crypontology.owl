@@ -22,10 +22,19 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
-        <Class IRI="#Ancient"/>
+        <Class IRI="#AES"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Asymmetric"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Asynchronous"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BinaryAdditive"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BlockCipher"/>
     </Declaration>
     <Declaration>
         <Class IRI="#BruteForceAttacks"/>
@@ -43,7 +52,13 @@
         <Class IRI="#Cryptology"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#DES"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#DesirableProperties"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Feistel"/>
     </Declaration>
     <Declaration>
         <Class IRI="#HashFunctions"/>
@@ -55,27 +70,42 @@
         <Class IRI="#MathematicalAnalysis"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Modern"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Protocols"/>
     </Declaration>
     <Declaration>
         <Class IRI="#SocialEngineering"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#SpartanScytale"/>
+        <Class IRI="#StreamCipher"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SubstitutionPermutation"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Symmetric"/>
     </Declaration>
+    <Declaration>
+        <Class IRI="#Synchronous"/>
+    </Declaration>
     <SubClassOf>
-        <Class IRI="#Ancient"/>
-        <Class IRI="#Symmetric"/>
+        <Class IRI="#AES"/>
+        <Class IRI="#SubstitutionPermutation"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Asymmetric"/>
         <Class IRI="#Cryptography"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Asynchronous"/>
+        <Class IRI="#StreamCipher"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BinaryAdditive"/>
+        <Class IRI="#Synchronous"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BlockCipher"/>
+        <Class IRI="#Symmetric"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#BruteForceAttacks"/>
@@ -98,8 +128,16 @@
         <Class abbreviatedIRI="owl:Thing"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#DES"/>
+        <Class IRI="#Feistel"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#DesirableProperties"/>
         <Class IRI="#Cryptography"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Feistel"/>
+        <Class IRI="#BlockCipher"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#HashFunctions"/>
@@ -114,10 +152,6 @@
         <Class IRI="#Classical"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Modern"/>
-        <Class IRI="#Symmetric"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Protocols"/>
         <Class IRI="#Cryptography"/>
     </SubClassOf>
@@ -126,17 +160,21 @@
         <Class IRI="#Cryptanalysis"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#SpartanScytale"/>
-        <Class IRI="#Ancient"/>
+        <Class IRI="#StreamCipher"/>
+        <Class IRI="#Symmetric"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SubstitutionPermutation"/>
+        <Class IRI="#BlockCipher"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Symmetric"/>
         <Class IRI="#Cryptography"/>
     </SubClassOf>
-    <DisjointClasses>
-        <Class IRI="#Ancient"/>
-        <Class IRI="#Modern"/>
-    </DisjointClasses>
+    <SubClassOf>
+        <Class IRI="#Synchronous"/>
+        <Class IRI="#StreamCipher"/>
+    </SubClassOf>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Cryptology</IRI>
