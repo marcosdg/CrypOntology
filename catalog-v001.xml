@@ -2,9 +2,13 @@
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <uri id="Automatically generated entry, Timestamp=1398791420844" name="http://www.semanticweb.org/SIA/crypontology" uri="crypontology.owl"/>
 =======
         <uri id="Automatically generated entry, Timestamp=1398791473248" name="http://www.semanticweb.org/SIA/crypontology" uri="crypontology.owl"/>
 >>>>>>> c7e196b8675db7e5a826459a1845c06a81103ccf
+=======
+        <uri id="Automatically generated entry, Timestamp=1398794382095" name="http://www.semanticweb.org/SIA/crypontology" uri="crypontology.owl"/>
+>>>>>>> marcos
     </group>
 </catalog>
