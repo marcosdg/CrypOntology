@@ -79,6 +79,9 @@
         <Class IRI="#OTP"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Pepe"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Protocols"/>
     </Declaration>
     <Declaration>
