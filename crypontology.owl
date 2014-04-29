@@ -96,9 +96,6 @@
     <Declaration>
         <Class IRI="#UnconditionalSecurity"/>
     </Declaration>
-    <Declaration>
-        <Class IRI="#andrea"/>
-    </Declaration>
     <SubClassOf>
         <Class IRI="#AES"/>
         <Class IRI="#SubstitutionPermutation"/>
