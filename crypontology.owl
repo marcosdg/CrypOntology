@@ -70,16 +70,10 @@
         <Class IRI="#ImplementationAttacks"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Marcos"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#MathematicalAnalysis"/>
     </Declaration>
     <Declaration>
         <Class IRI="#OTP"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Pepe"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Protocols"/>
@@ -101,9 +95,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#UnconditionalSecurity"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#andrea"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#AES"/>
