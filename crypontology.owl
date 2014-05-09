@@ -55,6 +55,9 @@
         <Class IRI="#Classical"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Collision_INVENTADO"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Collision_Resistant"/>
     </Declaration>
     <Declaration>
@@ -215,6 +218,10 @@
     <SubClassOf>
         <Class IRI="#Classical"/>
         <Class IRI="#Cryptanalysis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Collision_INVENTADO"/>
+        <Class IRI="#DesirableProperties"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Collision_Resistant"/>
