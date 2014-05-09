@@ -43,9 +43,6 @@
         <Class IRI="#Availability"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#BinaryAdditive"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#BlockCipher"/>
     </Declaration>
     <Declaration>
@@ -106,10 +103,13 @@
         <Class IRI="#MonoAlphabetic"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#NonRepudiation"/>
+        <Class IRI="#Non-Repudiation"/>
     </Declaration>
     <Declaration>
         <Class IRI="#OTP"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ParkerianHexad"/>
     </Declaration>
     <Declaration>
         <Class IRI="#PolyAlphabetic"/>
@@ -177,7 +177,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Authenticity"/>
-        <Class IRI="#DesirableProperties"/>
+        <Class IRI="#ParkerianHexad"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#AutoKey"/>
@@ -185,11 +185,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Availability"/>
-        <Class IRI="#DesirableProperties"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#BinaryAdditive"/>
-        <Class IRI="#Synchronous"/>
+        <Class IRI="#ParkerianHexad"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#BlockCipher"/>
@@ -213,7 +209,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Confidentiality"/>
-        <Class IRI="#DesirableProperties"/>
+        <Class IRI="#ParkerianHexad"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Cryptanalysis"/>
@@ -257,7 +253,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Integrity"/>
-        <Class IRI="#DesirableProperties"/>
+        <Class IRI="#ParkerianHexad"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Lorenz"/>
@@ -272,11 +268,15 @@
         <Class IRI="#Substitution"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#NonRepudiation"/>
-        <Class IRI="#DesirableProperties"/>
+        <Class IRI="#Non-Repudiation"/>
+        <Class IRI="#ParkerianHexad"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#OTP"/>
+        <Class IRI="#DesirableProperties"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ParkerianHexad"/>
         <Class IRI="#DesirableProperties"/>
     </SubClassOf>
     <SubClassOf>
@@ -285,7 +285,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Possession"/>
-        <Class IRI="#DesirableProperties"/>
+        <Class IRI="#ParkerianHexad"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Protocols"/>
@@ -329,7 +329,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Utility"/>
-        <Class IRI="#DesirableProperties"/>
+        <Class IRI="#ParkerianHexad"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Vigenere"/>
@@ -340,14 +340,34 @@
         <Class IRI="#PolyAlphabetic"/>
     </SubClassOf>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#AES</IRI>
+        <Literal datatypeIRI="&xsd;string">https://en.wikipedia.org/wiki/Advanced_Encryption_Standard</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#Affine</IRI>
+        <Literal datatypeIRI="&xsd;string">https://en.wikipedia.org/wiki/Affine_cipher</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Authenticity</IRI>
         <Literal datatypeIRI="&xsd;string">Authenticity refers to the veracity of the claim of origin or authorship of the information.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#AutoKey</IRI>
+        <Literal datatypeIRI="&xsd;string">http://cryptography.wikia.com/wiki/Autokey_cipher</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Availability</IRI>
         <Literal datatypeIRI="&xsd;string">Availability means having timely access to information. For example, a disk crash or denial-of-service attacks both cause a breach of availability. Any delay that exceeds the expected service levels for a system can be described as a breach of availability.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#Caesar</IRI>
+        <Literal datatypeIRI="&xsd;string">https://en.wikipedia.org/wiki/Caesar_cipher</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -365,9 +385,29 @@
         <Literal datatypeIRI="&xsd;string">Cryptology is the science derived from Mathematics that is concerned with data communication and storage in a secure way.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#DES</IRI>
+        <Literal datatypeIRI="&xsd;string">https://en.wikipedia.org/wiki/Data_Encryption_Standard</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#Enigma</IRI>
+        <Literal datatypeIRI="&xsd;string">https://en.wikipedia.org/wiki/Enigma_machine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Integrity</IRI>
         <Literal datatypeIRI="&xsd;string">Integrity refers to being correct or consistent with the intended state of information. Any unauthorized modification of data, whether deliberate or accidental, is a breach of data integrity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#Lorenz</IRI>
+        <Literal datatypeIRI="&xsd;string">https://en.wikipedia.org/wiki/Lorenz_SZ_40/42</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Non-Repudiation</IRI>
+        <Literal datatypeIRI="&xsd;string">Non-repudiation refers to a state of affairs where the purported maker of a statement will not be able to successfully challenge the validity of the statement or contract. If an attacker could repudiate a message we might not be able to identify such individual as malicious.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -375,6 +415,21 @@
         <Literal datatypeIRI="&xsd;string">A steam cipher is called one-time pad if the key steam s0, s1, s2,.... is generated by a true random number generator (first condition), and the key steam is only known to the lefitimate communicating parties (second condition), and every key steam bit si is only user once.
 The one-time pad is unconditionally secure. 
 </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#ParkerianHexad</IRI>
+        <Literal datatypeIRI="&xsd;string">https://en.wikipedia.org/wiki/Parkerian_hexad</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Possession</IRI>
+        <Literal datatypeIRI="&xsd;string">Refers to whether the information is controled by authorized individuals. A situation where someone steals a SEALED envelope without the possibility to open it, would imply a possession breach. We also could think about someone intercepting an encrypted email but not being able to decrypt it. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#Typex</IRI>
+        <Literal datatypeIRI="&xsd;string">https://en.wikipedia.org/wiki/Typex</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -385,6 +440,16 @@ The one-time pad is unconditionally secure.
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Utility</IRI>
         <Literal datatypeIRI="&xsd;string">Utility means usefulness. For example, suppose someone encrypted data on disk to prevent unauthorized access or undetected modifications – and then lost the decryption key: that would be a breach of utility. The data would be confidential, controlled, integral, authentic, and available – they just wouldn’t be useful in that form.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#Vigenere</IRI>
+        <Literal datatypeIRI="&xsd;string">https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#XOR</IRI>
+        <Literal datatypeIRI="&xsd;string">https://en.wikipedia.org/wiki/Xor_cipher</Literal>
     </AnnotationAssertion>
     <SubAnnotationPropertyOf>
         <AnnotationProperty IRI="#reference"/>
