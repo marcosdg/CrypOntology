@@ -55,9 +55,6 @@
         <Class IRI="#Classical"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Collision_Resistant"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Computational_Security"/>
     </Declaration>
     <Declaration>
@@ -130,9 +127,6 @@
         <Class IRI="#StreamCipher"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Strong_Resistance"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Substitution"/>
     </Declaration>
     <Declaration>
@@ -158,9 +152,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Vigenere"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Weak_Resistance"/>
     </Declaration>
     <Declaration>
         <Class IRI="#XOR"/>
@@ -201,10 +192,6 @@
         <Class IRI="#Symmetric"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Broadcasting"/>
-        <Class IRI="#DesirableProperties"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#BruteForceAttacks"/>
         <Class IRI="#Classical"/>
     </SubClassOf>
@@ -217,11 +204,23 @@
         <Class IRI="#Cryptanalysis"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Collision_Resistant"/>
+        <Class IRI="#Computational_Security"/>
         <Class IRI="#DesirableProperties"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Computational_Security"/>
+        <Class IRI="#Unidirectional"/>
+        <Class IRI="#DesirableProperties"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fixed-length_digest"/>
+        <Class IRI="#DesirableProperties"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Easy_and_Fast_to_calculate"/>
+        <Class IRI="#DesirableProperties"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Broadcasting"/>
         <Class IRI="#DesirableProperties"/>
     </SubClassOf>
     <SubClassOf>
@@ -249,10 +248,6 @@
         <Class IRI="#Cryptography"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Easy_and_Fast_to_calculate"/>
-        <Class IRI="#DesirableProperties"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#ElectroMechanical"/>
         <Class IRI="#Substitution"/>
     </SubClassOf>
@@ -263,10 +258,6 @@
     <SubClassOf>
         <Class IRI="#Feistel"/>
         <Class IRI="#BlockCipher"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Fixed-length_digest"/>
-        <Class IRI="#DesirableProperties"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#GOST"/>
@@ -285,14 +276,6 @@
         <Class IRI="#Cryptanalysis"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Integrity"/>
-        <Class IRI="#ParkerianHexad"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Lorenz"/>
-        <Class IRI="#ElectroMechanical"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#MD"/>
         <Class IRI="#HashFunctions"/>
     </SubClassOf>
@@ -309,40 +292,8 @@
         <Class IRI="#MD"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#MathematicalAnalysis"/>
-        <Class IRI="#Classical"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#MonoAlphabetic"/>
-        <Class IRI="#Substitution"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Non-Repudiation"/>
-        <Class IRI="#ParkerianHexad"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OTP"/>
-        <Class IRI="#DesirableProperties"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#PANAMA"/>
         <Class IRI="#HashFunctions"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ParkerianHexad"/>
-        <Class IRI="#DesirableProperties"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#PolyAlphabetic"/>
-        <Class IRI="#Substitution"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Possession"/>
-        <Class IRI="#ParkerianHexad"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Protocols"/>
-        <Class IRI="#Cryptography"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#RIPEMD"/>
@@ -433,16 +384,72 @@
         <Class IRI="#SHA-3"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Tiger"/>
+        <Class IRI="#HashFunctions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tiger-192/128/160"/>
+        <Class IRI="#Tiger"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tiger2"/>
+        <Class IRI="#Tiger"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WHIRLPOOL"/>
+        <Class IRI="#HashFunctions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImplementationAttacks"/>
+        <Class IRI="#Cryptanalysis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Integrity"/>
+        <Class IRI="#ParkerianHexad"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lorenz"/>
+        <Class IRI="#ElectroMechanical"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MathematicalAnalysis"/>
+        <Class IRI="#Classical"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MonoAlphabetic"/>
+        <Class IRI="#Substitution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Non-Repudiation"/>
+        <Class IRI="#ParkerianHexad"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OTP"/>
+        <Class IRI="#DesirableProperties"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ParkerianHexad"/>
+        <Class IRI="#DesirableProperties"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PolyAlphabetic"/>
+        <Class IRI="#Substitution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Possession"/>
+        <Class IRI="#ParkerianHexad"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Protocols"/>
+        <Class IRI="#Cryptography"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#SocialEngineering"/>
         <Class IRI="#Cryptanalysis"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#StreamCipher"/>
         <Class IRI="#Symmetric"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Strong_Resistance"/>
-        <Class IRI="#Collision_Resistant"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Substitution"/>
@@ -461,18 +468,6 @@
         <Class IRI="#StreamCipher"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Tiger"/>
-        <Class IRI="#HashFunctions"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Tiger-192/128/160"/>
-        <Class IRI="#Tiger"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Tiger2"/>
-        <Class IRI="#Tiger"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Transposition"/>
         <Class IRI="#Synchronous"/>
     </SubClassOf>
@@ -485,24 +480,12 @@
         <Class IRI="#DesirableProperties"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Unidirectional"/>
-        <Class IRI="#DesirableProperties"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Utility"/>
         <Class IRI="#ParkerianHexad"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Vigenere"/>
         <Class IRI="#PolyAlphabetic"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#WHIRLPOOL"/>
-        <Class IRI="#HashFunctions"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Weak_Resistance"/>
-        <Class IRI="#Collision_Resistant"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#XOR"/>
@@ -534,19 +517,9 @@
         <Literal datatypeIRI="&xsd;string">Availability means having timely access to information. For example, a disk crash or denial-of-service attacks both cause a breach of availability. Any delay that exceeds the expected service levels for a system can be described as a breach of availability.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Broadcasting</IRI>
-        <Literal datatypeIRI="&xsd;string">h(D) must involve every bit of D. If one bit is changed in D, h(D) should change about half of his bits.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
         <IRI>#Caesar</IRI>
         <Literal datatypeIRI="&xsd;string">https://en.wikipedia.org/wiki/Caesar_cipher</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Collision_Resistant</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">A h function will never be an injective function, therefore, always will exist collisions. Known  the pair (D, D&apos;) such that h(D)=h(D&apos;) we can distinguish between weak resistance and strong resistance.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -569,49 +542,9 @@
         <Literal datatypeIRI="&xsd;string">https://en.wikipedia.org/wiki/Data_Encryption_Standard</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Easy_and_Fast_to_calculate</IRI>
-        <Literal datatypeIRI="&xsd;string">The algorithm is easy to calculate and fast to execute.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
         <IRI>#Enigma</IRI>
         <Literal datatypeIRI="&xsd;string">https://en.wikipedia.org/wiki/Enigma_machine</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Fixed-length_digest</IRI>
-        <Literal datatypeIRI="&xsd;string">Summary size of h(D) should be fixed (defined by function), without depending on the size of D</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="#reference"/>
-        <IRI>#GOST</IRI>
-        <Literal datatypeIRI="&xsd;string">http://en.wikipedia.org/wiki/GOST_%28hash_function%29</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#GOST</IRI>
-        <Literal datatypeIRI="&xsd;string">is a 256-bit cryptographic hash function. It was initially defined in the Russian national standard GOST R 34.11-94 Information Technology - Cryptographic Information Security - Hash Function. The equivalent standard used by other member-states of the CIS is GOST 34.311-95.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="#reference"/>
-        <IRI>#HAVAL</IRI>
-        <Literal datatypeIRI="&xsd;string">http://en.wikipedia.org/wiki/HAVAL</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#HAVAL</IRI>
-        <Literal datatypeIRI="&xsd;string">Is a cryptographic hash function, can produce hashes of different lengths and hashes in lengths of 128 bits, 160 bits, 192 bits, 224 bits, and 256 bits. HAVAL also allows users to specify the number of rounds (3, 4, or 5) to be used to generate the hash. It was invented by Yuliang Zheng, Josef Pieprzyk, and Jennifer Seberry in 1992.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="#reference"/>
-        <IRI>#HashFunctions</IRI>
-        <Literal datatypeIRI="&xsd;string">http://en.wikipedia.org/wiki/Cryptographic_hash_function</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#HashFunctions</IRI>
-        <Literal datatypeIRI="&xsd;string">A cryptographic hash function is a hash function that takes an arbitrary block of data and returns a fixed-size bit string, the cryptographic hash value, such that any (accidental or intentional) change to the data will (with very high probability) change the hash value. The data to be encoded are often called the message, and the hash value is sometimes called the message digest or simply digest.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -622,41 +555,6 @@
         <AnnotationProperty IRI="#reference"/>
         <IRI>#Lorenz</IRI>
         <Literal datatypeIRI="&xsd;string">https://en.wikipedia.org/wiki/Lorenz_SZ_40/42</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#MD</IRI>
-        <Literal datatypeIRI="&xsd;string">Are a set of cryptographic hash functions developed by Ronald Rivest in 1989 (MD2), 1990 (MD4) and 1992 (MD5)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="#reference"/>
-        <IRI>#MD2</IRI>
-        <Literal datatypeIRI="&xsd;string">http://en.wikipedia.org/wiki/MD2_%28cryptography%29</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#MD2</IRI>
-        <Literal datatypeIRI="&xsd;string">The algorithm is optimized for 8-bit computers.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="#reference"/>
-        <IRI>#MD4</IRI>
-        <Literal datatypeIRI="&xsd;string">http://en.wikipedia.org/wiki/MD4</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#MD4</IRI>
-        <Literal datatypeIRI="&xsd;string">The digest length is 128 bits. The algorithm has influenced later designs, such as the MD5, SHA-1 and RIPEMD algorithms.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="#reference"/>
-        <IRI>#MD5</IRI>
-        <Literal datatypeIRI="&xsd;string">http://en.wikipedia.org/wiki/MD5</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#MD5</IRI>
-        <Literal datatypeIRI="&xsd;string">The MD5 message-digest algorithm is a widely used cryptographic hash function producing a 128-bit (16-byte) hash value, typically expressed in text format as a 32 digit hexadecimal number. MD5 has been utilized in a wide variety of cryptographic applications, and is also commonly used to verify data integrity.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -672,6 +570,21 @@ The one-time pad is unconditionally secure.
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
+        <IRI>#ParkerianHexad</IRI>
+        <Literal datatypeIRI="&xsd;string">https://en.wikipedia.org/wiki/Parkerian_hexad</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Possession</IRI>
+        <Literal datatypeIRI="&xsd;string">Refers to whether the information is controled by authorized individuals. A situation where someone steals a SEALED envelope without the possibility to open it, would imply a possession breach. We also could think about someone intercepting an encrypted email but not being able to decrypt it. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#Typex</IRI>
+        <Literal datatypeIRI="&xsd;string">https://en.wikipedia.org/wiki/Typex</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
         <IRI>#PANAMA</IRI>
         <Literal datatypeIRI="&xsd;string">http://en.wikipedia.org/wiki/PANAMA</Literal>
     </AnnotationAssertion>
@@ -680,16 +593,6 @@ The one-time pad is unconditionally secure.
         <IRI>#PANAMA</IRI>
         <Literal datatypeIRI="&xsd;string"> Is a cryptography primitive which can be used both as a hash function and a stream cipher, the stream cipher uses a 256-bit key and the performance of the cipher is very good reaching 2 cycles per byte. Based on StepRightUp, it was designed by Joan Daemen and Craig Clapp and presented in the paper Fast Hashing and Stream Encryption with PANAMA on the Fast Software Encryption (FSE) conference 1998. The cipher has influenced several other designs, for example MUGI.
 </Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="#reference"/>
-        <IRI>#ParkerianHexad</IRI>
-        <Literal datatypeIRI="&xsd;string">https://en.wikipedia.org/wiki/Parkerian_hexad</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Possession</IRI>
-        <Literal datatypeIRI="&xsd;string">Refers to whether the information is controled by authorized individuals. A situation where someone steals a SEALED envelope without the possibility to open it, would imply a possession breach. We also could think about someone intercepting an encrypted email but not being able to decrypt it. </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
@@ -769,6 +672,81 @@ Although RadioGatún is a derivative of Panama, a stream cipher and hash constru
         <Literal datatypeIRI="&xsd;string">SHA-1 produces a 160-bit (20-byte) hash value. A SHA-1 hash value is typically rendered as a hexadecimal number, 40 digits long</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Easy_and_Fast_to_calculate</IRI>
+        <Literal datatypeIRI="&xsd;string">The algorithm is easy to calculate and fast to execute.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Fixed-length_digest</IRI>
+        <Literal datatypeIRI="&xsd;string">Summary size of h(D) should be fixed (defined by function), without depending on the size of D</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#GOST</IRI>
+        <Literal datatypeIRI="&xsd;string">http://en.wikipedia.org/wiki/GOST_%28hash_function%29</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#GOST</IRI>
+        <Literal datatypeIRI="&xsd;string">is a 256-bit cryptographic hash function. It was initially defined in the Russian national standard GOST R 34.11-94 Information Technology - Cryptographic Information Security - Hash Function. The equivalent standard used by other member-states of the CIS is GOST 34.311-95.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#HAVAL</IRI>
+        <Literal datatypeIRI="&xsd;string">http://en.wikipedia.org/wiki/HAVAL</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HAVAL</IRI>
+        <Literal datatypeIRI="&xsd;string">Is a cryptographic hash function, can produce hashes of different lengths and hashes in lengths of 128 bits, 160 bits, 192 bits, 224 bits, and 256 bits. HAVAL also allows users to specify the number of rounds (3, 4, or 5) to be used to generate the hash. It was invented by Yuliang Zheng, Josef Pieprzyk, and Jennifer Seberry in 1992.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#HashFunctions</IRI>
+        <Literal datatypeIRI="&xsd;string">http://en.wikipedia.org/wiki/Cryptographic_hash_function</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HashFunctions</IRI>
+        <Literal datatypeIRI="&xsd;string">A cryptographic hash function is a hash function that takes an arbitrary block of data and returns a fixed-size bit string, the cryptographic hash value, such that any (accidental or intentional) change to the data will (with very high probability) change the hash value. The data to be encoded are often called the message, and the hash value is sometimes called the message digest or simply digest.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MD</IRI>
+        <Literal datatypeIRI="&xsd;string">Are a set of cryptographic hash functions developed by Ronald Rivest in 1989 (MD2), 1990 (MD4) and 1992 (MD5)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#MD2</IRI>
+        <Literal datatypeIRI="&xsd;string">http://en.wikipedia.org/wiki/MD2_%28cryptography%29</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MD2</IRI>
+        <Literal datatypeIRI="&xsd;string">The algorithm is optimized for 8-bit computers.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#MD4</IRI>
+        <Literal datatypeIRI="&xsd;string">http://en.wikipedia.org/wiki/MD4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MD4</IRI>
+        <Literal datatypeIRI="&xsd;string">The digest length is 128 bits. The algorithm has influenced later designs, such as the MD5, SHA-1 and RIPEMD algorithms.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#MD5</IRI>
+        <Literal datatypeIRI="&xsd;string">http://en.wikipedia.org/wiki/MD5</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MD5</IRI>
+        <Literal datatypeIRI="&xsd;string">The MD5 message-digest algorithm is a widely used cryptographic hash function producing a 128-bit (16-byte) hash value, typically expressed in text format as a 32 digit hexadecimal number. MD5 has been utilized in a wide variety of cryptographic applications, and is also commonly used to verify data integrity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
         <IRI>#SHA-2</IRI>
         <Literal datatypeIRI="&xsd;string">http://en.wikipedia.org/wiki/SHA-2</Literal>
@@ -822,8 +800,28 @@ Although RadioGatún is a derivative of Panama, a stream cipher and hash constru
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Strong_Resistance</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Should be computationally infeasible to find D and D&apos; such that h(D) = h(D&apos;)</Literal>
+        <IRI>#UnconditionalSecurity</IRI>
+        <Literal datatypeIRI="&xsd;string">A cryptosystem is unconditionally or information-theoretically secure if it cannot be broken even with infinite computational resources.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Utility</IRI>
+        <Literal datatypeIRI="&xsd;string">Utility means usefulness. For example, suppose someone encrypted data on disk to prevent unauthorized access or undetected modifications – and then lost the decryption key: that would be a breach of utility. The data would be confidential, controlled, integral, authentic, and available – they just wouldn’t be useful in that form.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#Vigenere</IRI>
+        <Literal datatypeIRI="&xsd;string">https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Unidirectional</IRI>
+        <Literal datatypeIRI="&xsd;string">Known summarizes h(D) should be computationally infeasible to find D</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#WHIRLPOOL</IRI>
+        <Literal datatypeIRI="&xsd;string">http://en.wikipedia.org/wiki/WHIRLPOOL</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
@@ -846,44 +844,9 @@ Although RadioGatún is a derivative of Panama, a stream cipher and hash constru
         <Literal datatypeIRI="&xsd;string">Is a variant where the message is padded by first appending a byte with the hexadecimal value of 0x80 as in MD4, MD5 and SHA, rather than with the hexadecimal value of 0x01 as in the case of Tiger.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#reference"/>
-        <IRI>#Typex</IRI>
-        <Literal datatypeIRI="&xsd;string">https://en.wikipedia.org/wiki/Typex</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#UnconditionalSecurity</IRI>
-        <Literal datatypeIRI="&xsd;string">A cryptosystem is unconditionally or information-theoretically secure if it cannot be broken even with infinite computational resources.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Unidirectional</IRI>
-        <Literal datatypeIRI="&xsd;string">Known summarizes h(D) should be computationally infeasible to find D</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Utility</IRI>
-        <Literal datatypeIRI="&xsd;string">Utility means usefulness. For example, suppose someone encrypted data on disk to prevent unauthorized access or undetected modifications – and then lost the decryption key: that would be a breach of utility. The data would be confidential, controlled, integral, authentic, and available – they just wouldn’t be useful in that form.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="#reference"/>
-        <IRI>#Vigenere</IRI>
-        <Literal datatypeIRI="&xsd;string">https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="#reference"/>
-        <IRI>#WHIRLPOOL</IRI>
-        <Literal datatypeIRI="&xsd;string">http://en.wikipedia.org/wiki/WHIRLPOOL</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#WHIRLPOOL</IRI>
         <Literal datatypeIRI="&xsd;string">Whirlpool (sometimes styled WHIRLPOOL) is a cryptographic hash function. It was designed by Vincent Rijmen (co-creator of the Advanced Encryption Standard) and Paulo S. L. M. Barreto. The hash has been recommended by the NESSIE project. It has also been adopted by the International Organization for Standardization (ISO) and the International Electrotechnical Commission (IEC) as part of the joint ISO/IEC 10118-3 international standard.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Weak_Resistance</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Known D shoud be computationally infeasible to find D&apos; such that h(D) = h(D&apos;)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
