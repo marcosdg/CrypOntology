@@ -37,6 +37,9 @@
         <Class IRI="#ARIA"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Accountability"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Active"/>
     </Declaration>
     <Declaration>
@@ -47,6 +50,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Alberti&apos;s_disk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Anonymity"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Anubis"/>
@@ -375,6 +381,10 @@
         <Class IRI="#SubstitutionPermutation"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Accountability"/>
+        <Class IRI="#DesirableProperties"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Active"/>
         <Class IRI="#Attacks"/>
     </SubClassOf>
@@ -389,6 +399,10 @@
     <SubClassOf>
         <Class IRI="#Alberti&apos;s_disk"/>
         <Class IRI="#Devices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Anonymity"/>
+        <Class IRI="#DesirableProperties"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Anubis"/>
@@ -995,6 +1009,16 @@ The algorithm uses a substitution-permutation network structure based on AES. Th
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
+        <IRI>#Accountability</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://www.itsecurity.com/security.htm?s=175</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Accountability</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Allows to trace the origin of an activity made by an entity. That is, allows to identify the source of the attack to the system.  </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
         <IRI>#Active</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">http://en.citizendium.org/wiki/Active_attack</Literal>
     </AnnotationAssertion>
@@ -1032,6 +1056,26 @@ The algorithm uses a substitution-permutation network structure based on AES. Th
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Alberti&apos;s_disk</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Device that allows to implement the Alberti&apos;s algorithm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#Anonymity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">https://en.wikipedia.org/wiki/Anonymous_P2P</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#Anonymity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">https://en.wikipedia.org/wiki/Anonymous_web_browsing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#Anonymity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">https://en.wikipedia.org/wiki/Data_anonymization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Anonymity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Allows to the user of the system to hide its identification in a communication.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
