@@ -34,12 +34,6 @@
         <Class IRI="#AES"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ARC4"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ARCFOUR"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#ARIA"/>
     </Declaration>
     <Declaration>
@@ -53,9 +47,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Alberti&apos;s_disk"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Alleged_RC4"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Anubis"/>
@@ -380,14 +371,6 @@
         <Class IRI="#SubstitutionPermutation"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#ARC4"/>
-        <Class IRI="#Protocols"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ARCFOUR"/>
-        <Class IRI="#Protocols"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#ARIA"/>
         <Class IRI="#SubstitutionPermutation"/>
     </SubClassOf>
@@ -406,10 +389,6 @@
     <SubClassOf>
         <Class IRI="#Alberti&apos;s_disk"/>
         <Class IRI="#Devices"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Alleged_RC4"/>
-        <Class IRI="#Protocols"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Anubis"/>
@@ -964,14 +943,29 @@
         <Class IRI="#Collision_attack"/>
     </SubClassOf>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#3DES</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">https://en.wikipedia.org/wiki/Triple_des</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#3DES</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Algorithm that makes DES three times.</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Variant of the DES cipher that applies three times the cryptographic mechanism with the aim of increasing its security.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#A5/1</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">https://en.wikipedia.org/wiki/A5/1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#A5/1</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Implementation used in Europe and EEUU.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#A5/2</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">https://en.wikipedia.org/wiki/A5/2</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -985,13 +979,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#ARC4</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Non-official RSA protocol implementation.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#ARCFOUR</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Non-official RSA protocol implementation.</Literal>
+        <IRI>#AES</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AES (Advanced Encryption Standard) is based on the Rijndael cipher. Thus, unlike its predecesor DES, it does not use a Feistel  Network. AES was approved by the NIST (National Security Agency) after realizing that DES was insecure</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
@@ -1005,9 +994,14 @@
 The algorithm uses a substitution-permutation network structure based on AES. The interface is the same as AES: 128-bit block size with key size of 128, 192, or 256 bits. The number of rounds is 12, 14, or 16, depending on the key size. ARIA uses two 8×8-bit S-boxes and their inverses in alternate rounds; one of these is the Rijndael S-box.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#Active</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://en.citizendium.org/wiki/Active_attack</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Active</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">This type of attack implies some modification in the data flow or creating a fake data and iject it in the network.</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An &apos;active&apos; attack refers to the situation in which the attacker modifies some part of the system intended to be broken. For instance, modifying the messages, blocking the communications channel, code injection, among others.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
@@ -1037,12 +1031,7 @@ The algorithm uses a substitution-permutation network structure based on AES. Th
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Alberti&apos;s_disk</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Devices that allows to implement the Alberti&apos;s algorithm</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Alleged_RC4</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Non-official RSA protocol implementation.</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Device that allows to implement the Alberti&apos;s algorithm</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
@@ -1060,14 +1049,24 @@ The algorithm uses a substitution-permutation network structure based on AES. Th
         <Literal datatypeIRI="&rdf;PlainLiteral">This type of cryptography uses a private key for each user and a public key for everyone. The first is used to decipher and the second to cipher</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#Asynchronous</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">https://en.wikipedia.org/wiki/Stream_cipher#Self-synchronizing_stream_ciphers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Asynchronous</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">The key steam also depends on the chipertext.</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The key stream also depends on the ciphertext.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#Attacks</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">https://en.wikipedia.org/wiki/Category:Cryptographic_attacks</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Attacks</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Several methods to find the key of a cryptographic algorithm or find the way to read the ciphered text.</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A cryptographic attack is a method for circumventing the security of a cryptographic system by finding a weakness in a code, cipher, cryptographic protocol or key management scheme. This process is also called &quot;Cryptanalysis&quot;.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1106,9 +1105,14 @@ In this attack, the attacker leaves a malware infected floppy disk, CD-ROM, or U
         <Literal datatypeIRI="&rdf;PlainLiteral">The biclique attack is a method of cryptanalysis known for having broken both full AES and full IDEA, though only with slight advantage over brute force. It has also been applied to the KASUMI cipher and preimage resistance of the Skein-512 and SHA-2 hash functions.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#BlockCipher</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">https://en.wikipedia.org/wiki/Block_cipher</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#BlockCipher</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Cipher data in blocks instead bit by bit.</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Data is ciphered in blocks instead bit by bit.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
@@ -1138,9 +1142,14 @@ In this attack, the attacker leaves a malware infected floppy disk, CD-ROM, or U
         <Literal datatypeIRI="&xsd;string">h(D) must involve every bit of D. If one bit is changed in D, h(D) should change about half of his bits.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#BruteForceAttacks</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">https://en.wikipedia.org/wiki/Brute-force_attack</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#BruteForceAttacks</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">This attack uses all possible cambination in the key space in an order way.</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Tries all possible combinations of symbols in the key space in an ordered way.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
@@ -1158,14 +1167,14 @@ In this attack, the attacker leaves a malware infected floppy disk, CD-ROM, or U
         <Literal datatypeIRI="&rdf;PlainLiteral">A h function will never be an injective function, therefore, always will exist collisions. Known  the pair (D, D&apos;) such that h(D)=h(D&apos;) we can distinguish between weak resistance and strong resistance.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty IRI="#reference"/>
         <IRI>#Collision_attack</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">A collision attack on a cryptographic hash tries to find two inputs producing the same hash value, i.e. a hash collision. In contrast to a preimage attack the hash value is not specified.</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/Collision_attack</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Collision_attack</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/Collision_attack</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A collision attack on a cryptographic hash tries to find two inputs producing the same hash value, i.e. a hash collision. In contrast to a preimage attack the hash value is not specified.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1215,12 +1224,12 @@ In this attack, the attacker leaves a malware infected floppy disk, CD-ROM, or U
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#DES</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Algorithm based in Lucifer.</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Algorithm based in the Lucifer. Predecesor of 3DES (Triple DES) and AES.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#DesirableProperties</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Properties that are desirable in criptographic functions or algorithms.</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Properties that every Cryptographic system intended to be secure should consider or include.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1228,9 +1237,14 @@ In this attack, the attacker leaves a malware infected floppy disk, CD-ROM, or U
         <Literal datatypeIRI="&rdf;PlainLiteral">Hardware devices that uses cryptographic algorithms</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#DictionaryAttacks</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">https://en.wikipedia.org/wiki/Dictionary_attack</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#DictionaryAttacks</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">This type tries to match a list of words(Dictionary) with the key.</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Unlike a brute-force attack, a dictionary attack restricts the search space to a given collection of words or letters. Thus, it may not find the correct key.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
@@ -1243,9 +1257,19 @@ In this attack, the attacker leaves a malware infected floppy disk, CD-ROM, or U
         <Literal datatypeIRI="&rdf;PlainLiteral">Differential cryptanalysis is a general form of cryptanalysis applicable primarily to block ciphers, but also to stream ciphers and cryptographic hash functions. In the broadest sense, it is the study of how differences in an input can affect the resultant difference at the output. In the case of a block cipher, it refers to a set of techniques for tracing differences through the network of transformations, discovering where the cipher exhibits non-random behavior, and exploiting such properties to recover the secret key.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#ECDH</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">https://en.wikipedia.org/wiki/ECDH</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#ECDH</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">The full name of this algorithm is EC Diffie-Hellman. Is based in the ElGamal elliptic algorithm.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#ECDSA</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">https://en.wikipedia.org/wiki/ECDSA</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1256,6 +1280,21 @@ In this attack, the attacker leaves a malware infected floppy disk, CD-ROM, or U
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Easy_and_Fast_to_calculate</IRI>
         <Literal datatypeIRI="&xsd;string">The algorithm is easy to calculate and fast to execute.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#Eavesdropping</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://encyclopedia2.thefreedictionary.com/Eavesdropping</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#Eavesdropping</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">http://www.etymonline.com/index.php?term=eavesdropper&amp;allowed_in_frame=0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Eavesdropping</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Secretely listening to private conversations without the authorization of the parties.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1303,6 +1342,11 @@ In this attack, the attacker leaves a malware infected floppy disk, CD-ROM, or U
         <Literal datatypeIRI="&xsd;string">is a 256-bit cryptographic hash function. It was initially defined in the Russian national standard GOST R 34.11-94 Information Technology - Cryptographic Information Security - Hash Function. The equivalent standard used by other member-states of the CIS is GOST 34.311-95.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#GSM</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">https://en.wikipedia.org/wiki/GSM</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#GSM</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Protocol used in the mobile communications. Uses the KATSUMI algorithm</Literal>
@@ -1310,7 +1354,7 @@ In this attack, the attacker leaves a malware infected floppy disk, CD-ROM, or U
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#GuessingAttacks</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Knowing info from an user, the attacker uses it because is probably the user will used it for his passwords and access words.</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The attacker uses personal information (special dates, favourite hobbies, names, acronyms, ...) from a known user to reduce the search space of keys.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
@@ -1340,7 +1384,7 @@ In this attack, the attacker leaves a malware infected floppy disk, CD-ROM, or U
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Higher-order_differential_cryptanalysis</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">higher-order differential cryptanalysis is a generalization of differential cryptanalysis, an attack against block ciphers. Developed in 1994 by Lars Knudsen, the technique has been applied to a number of ciphers. Whereas ordinary differential cryptanalysis analyzes the differences between two texts, the higher-order variant considers differences between differences, etc. It has been shown to be more powerful than a first-order attack in some cases (see KN-Cipher).</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Higher-order differential cryptanalysis is a generalization of differential cryptanalysis, an attack against block ciphers. Developed in 1994 by Lars Knudsen, the technique has been applied to a number of ciphers. Whereas ordinary differential cryptanalysis analyzes the differences between two texts, the higher-order variant considers differences between differences, etc. It has been shown to be more powerful than a first-order attack in some cases (see KN-Cipher).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
@@ -1423,6 +1467,11 @@ In this attack, the attacker leaves a malware infected floppy disk, CD-ROM, or U
         <Literal datatypeIRI="&rdf;PlainLiteral">German Army Machine used during the second world war, it uses the Vernam algorithm.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#Lucifer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">https://en.wikipedia.org/wiki/Lucifer_%28cipher%29</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Lucifer</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">First algorithm based in Feistel network.</Literal>
@@ -1480,12 +1529,12 @@ In this attack, the attacker leaves a malware infected floppy disk, CD-ROM, or U
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Man_in_the_middle</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">The man-in-the-middle attack (often abbreviated MITM, MitM, MIM, MiM, MITMA) in cryptography and computer security is a form of active eavesdropping in which the attacker makes independent connections with the victims and relays messages between them, making them believe that they are talking directly to each other over a private connection, when in fact the entire conversation is controlled by the attacker. The attacker must be able to intercept all messages going between the two victims and inject new ones, which is straightforward in many circumstances (for example, an attacker within reception range of an unencrypted Wi-Fi wireless access point, can insert himself as a man-in-the-middle).</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The Man-in-the-Middle attack (often abbreviated MITM, MitM, MIM, MiM, MITMA) in Cryptography and Computer Security is a form of active eavesdropping in which the attacker makes independent connections with the victims and relays messages between them, making them believe that they are talking directly to each other over a private connection, when in fact the entire conversation is controlled by the attacker. The attacker must be able to intercept all messages going between the two victims and inject new ones, which is straightforward in many circumstances (for example, an attacker within reception range of an unencrypted Wi-Fi wireless access point, can insert himself as a man-in-the-middle).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
         <IRI>#MathematicalAnalysis</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">This kind of attack uses the statistical to find out different parameters of the cipher text to try to guest the letters in the plain text.</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This class of attacks are mainly focused on the analysis of the statistical properties of the cipher text with the aim of extracting relevant information to decipher it.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1547,6 +1596,11 @@ The one-time pad is unconditionally secure.
         <Literal datatypeIRI="&xsd;string">https://en.wikipedia.org/wiki/Parkerian_hexad</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#Passive</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://en.citizendium.org/wiki/Passive_attack</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Passive</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">This type of attacks just listen the network to recover usefull info from it.</Literal>
@@ -1574,12 +1628,22 @@ The one-time pad is unconditionally secure.
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Protocols</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Implementations used today of different algorithms. Protocols are programs acepted as standar and used in differente applications.</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Implementations currently used by different algorithms. Protocols are specifications or procedures, which are acepted as standards, on how to build a system for a particular purpose or functionality.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#RC4</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">https://en.wikipedia.org/wiki/ARC4</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#RC4</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Official RSA based implementation, it can&apos;t be used with this name because the RSA Security has never  released the code,</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#RFC-3826</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">https://tools.ietf.org/html/rfc3826</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1721,6 +1785,11 @@ Although RadioGatún is a derivative of Panama, a stream cipher and hash constru
 </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#SNMP</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">https://en.wikipedia.org/wiki/SNMP</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#SNMP</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Protocol from the application layer that allows admin info exchange between  network devices.</Literal>
@@ -1738,7 +1807,7 @@ Although RadioGatún is a derivative of Panama, a stream cipher and hash constru
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Search_in_key_space</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">This kind of attack tries to guest the passwrod or the key in different ways.</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The class of attacks that systematically search possible keys. There are different types according to the size of the search space.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
@@ -1768,12 +1837,17 @@ Although RadioGatún is a derivative of Panama, a stream cipher and hash constru
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#SocialEngineering</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral"> psychological manipulation of people into performing actions or divulging confidential information.</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Psychological manipulation of people into performing actions or divulging confidential information.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#StreamCipher</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">https://en.wikipedia.org/wiki/Stream_cipher</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#StreamCipher</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Cipher data bit by bit in instead blocks.</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The data to be ciphered is processed one bit at a time.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1787,13 +1861,34 @@ Although RadioGatún is a derivative of Panama, a stream cipher and hash constru
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SubstitutionPermutation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Essentially it consist of a series of mathematical operations that try to add Confusion (changing the original symbols of the text) and Diffusion (changing the original positions of such symbols).
+These properties are the ones that try to support the security to the system.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SubstitutionPermutation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">https://en.wikipedia.org/wiki/Substitution-permutation_network</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Symmetric</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">This type of cryptography uses a key to chiper and decipher messages.</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This type of cryptography employs the same key to cipher and decipher messages.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#Synchronous</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">https://en.wikipedia.org/wiki/Stream_cipher#Self-synchronizing_stream_ciphers</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Synchronous</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">The key steam depends only on the key.</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The key stream depends only on the key.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#TLS</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">https://en.wikipedia.org/wiki/Transport_Layer_Security</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1808,7 +1903,7 @@ Although RadioGatún is a derivative of Panama, a stream cipher and hash constru
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Telephone_tapping</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Telephone tapping (also wire tapping or wiretapping in American English) is the monitoring of telephone and Internet conversations by a third party, often by covert means. The wire tap received its name because, historically, the monitoring connection was an actual electrical tap on the telephone line. Legal wiretapping by a government agency is also called lawful interception. Passive wiretapping monitors or records the traffic, while active wiretapping alters or otherwise affects it.</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Telephone tapping (also wire tapping or wiretapping in American English) is the monitoring of telephone and Internet conversations by a third party, often by covert means. The wire tap received its name because, historically, the monitoring connection was an actual electrical tap on the telephone line. Legal wiretapping by a government agency is also called lawful interception. Passive wiretapping monitors or records the traffic, while active wiretapping alters or otherwise affects it.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1838,7 +1933,7 @@ Although RadioGatún is a derivative of Panama, a stream cipher and hash constru
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Transposition</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">It changes the order of the letters in the message</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">It only changes the order (permutates) of the symbols in the message.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
@@ -1898,7 +1993,7 @@ Although RadioGatún is a derivative of Panama, a stream cipher and hash constru
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#UES</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">In cryptography, UES (Universal Encryption Standard) is a block cipher designed in 1999 by Helena Handschuh and Serge Vaudenay. They proposed it as a transitional step, to prepare for the completion of the AES process.</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">In Cryptography, UES (Universal Encryption Standard) is a block cipher designed in 1999 by Helena Handschuh and Serge Vaudenay. They proposed it as a transitional step, to prepare for the completion of the AES process.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1926,9 +2021,19 @@ Although RadioGatún is a derivative of Panama, a stream cipher and hash constru
         <Literal datatypeIRI="&rdf;PlainLiteral">Is a method of encrypting alphabetic text by using a series of different Caesar ciphers based on the letters of a keyword. </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#WAP</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">https://en.wikipedia.org/wiki/Wireless_Application_Protocol</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#WAP</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Protocol used in wireless cards, includes the RC4 in his core.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#WEP</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">https://en.wikipedia.org/wiki/Wired_Equivalent_Privacy</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1978,7 +2083,7 @@ Although RadioGatún is a derivative of Panama, a stream cipher and hash constru
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#XSL</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">In cryptography, the eXtended Sparse Linearization (XSL) attack is a method of cryptanalysis for block ciphers. The attack was first published in 2002 by researchers Nicolas Courtois and Josef Pieprzyk. It has caused some controversy as it was claimed to have the potential to break the Advanced Encryption Standard (AES) cipher, also known as Rijndael, faster than an exhaustive search. Since AES is already widely used in commerce and government for the transmission of secret information, finding a technique that can shorten the amount of time it takes to retrieve the secret message without having the key could have wide implications.</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">In Cryptography, the eXtended Sparse Linearization (XSL) attack is a method of cryptanalysis for block ciphers. The attack was first published in 2002 by researchers Nicolas Courtois and Josef Pieprzyk. It has caused some controversy as it was claimed to have the potential to break the Advanced Encryption Standard (AES) cipher, also known as Rijndael, faster than an exhaustive search. Since AES is already widely used in commerce and government for the transmission of secret information, finding a technique that can shorten the amount of time it takes to retrieve the secret message without having the key could have wide implications.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
