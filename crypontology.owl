@@ -40,6 +40,9 @@
         <Class IRI="#ARCFOUR"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#ARIA"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Active"/>
     </Declaration>
     <Declaration>
@@ -49,7 +52,13 @@
         <Class IRI="#Alberti"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Alberti&apos;s_disk"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Alleged_RC4"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Anubis"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Asymmetric"/>
@@ -70,7 +79,19 @@
         <Class IRI="#Availability"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Baiting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Biclique_attack"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#BlockCipher"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Blowfish"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bomba"/>
     </Declaration>
     <Declaration>
         <Class IRI="#BruteForceAttacks"/>
@@ -82,10 +103,19 @@
         <Class IRI="#Collision_Resistant"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Collision_attack"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Collision_strong_attack"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Computational_Security"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Confidentiality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cool_boot_attack"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Cryptography"/>
@@ -104,6 +134,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#DictionaryAttacks"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Differential_cryptoanalysis"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ECDH"/>
@@ -127,6 +160,9 @@
         <Class IRI="#Feistel"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Frequency_analysis"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#GSM"/>
     </Declaration>
     <Declaration>
@@ -136,16 +172,40 @@
         <Class IRI="#HashFunctions"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Higher-order_differential_cryptanalysis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Impossible_differential_cryptanalysis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Index_of_coincidence"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Integrity"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#KATSUMI"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kasiski_examination"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kerberos"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Key-autokey"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Loki"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Lorenz"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Lucifer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MAGENTA"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Man_in_the_middle"/>
@@ -160,6 +220,12 @@
         <Class IRI="#MonoAlphabetic"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#N-gram"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nimbus"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Non-Repudiation"/>
     </Declaration>
     <Declaration>
@@ -172,10 +238,16 @@
         <Class IRI="#Passive"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Phishing"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#PolyAlphabetic"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Possession"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pretexting"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Protocols"/>
@@ -197,6 +269,12 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Search_in_key_space"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Simon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Slide_attack"/>
     </Declaration>
     <Declaration>
         <Class IRI="#SocialEngineering"/>
@@ -223,13 +301,31 @@
         <Class IRI="#TLS"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Telephone_tapping"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Text-autokey"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Transposition"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Treyfer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TrojanHorse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Truncated_differential_cryptanalysis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Twofish"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Typex"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UES"/>
     </Declaration>
     <Declaration>
         <Class IRI="#UnconditionalSecurity"/>
@@ -254,6 +350,15 @@
     </Declaration>
     <Declaration>
         <Class IRI="#XOR"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#XSL"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Zodiac"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#collision_weak_attack"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="#reference"/>
@@ -283,6 +388,10 @@
         <Class IRI="#Protocols"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#ARIA"/>
+        <Class IRI="#SubstitutionPermutation"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Active"/>
         <Class IRI="#Attacks"/>
     </SubClassOf>
@@ -295,8 +404,16 @@
         <Class IRI="#PolyAlphabetic"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Alberti&apos;s_disk"/>
+        <Class IRI="#Devices"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Alleged_RC4"/>
         <Class IRI="#Protocols"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Anubis"/>
+        <Class IRI="#SubstitutionPermutation"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Asymmetric"/>
@@ -323,8 +440,24 @@
         <Class IRI="#ParkerianHexad"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Baiting"/>
+        <Class IRI="#SocialEngineering"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Biclique_attack"/>
+        <Class IRI="#Active"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#BlockCipher"/>
         <Class IRI="#Symmetric"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Blowfish"/>
+        <Class IRI="#SubstitutionPermutation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bomba"/>
+        <Class IRI="#Devices"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Broadcasting"/>
@@ -343,12 +476,24 @@
         <Class IRI="#DesirableProperties"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Collision_attack"/>
+        <Class IRI="#Active"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Collision_strong_attack"/>
+        <Class IRI="#Collision_attack"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Computational_Security"/>
         <Class IRI="#DesirableProperties"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Confidentiality"/>
         <Class IRI="#ParkerianHexad"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cool_boot_attack"/>
+        <Class IRI="#Active"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Cryptography"/>
@@ -373,6 +518,10 @@
     <SubClassOf>
         <Class IRI="#DictionaryAttacks"/>
         <Class IRI="#Search_in_key_space"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Differential_cryptoanalysis"/>
+        <Class IRI="#Active"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ECDH"/>
@@ -411,6 +560,10 @@
         <Class IRI="#DesirableProperties"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Frequency_analysis"/>
+        <Class IRI="#MathematicalAnalysis"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#GOST"/>
         <Class IRI="#HashFunctions"/>
     </SubClassOf>
@@ -431,12 +584,40 @@
         <Class IRI="#Cryptography"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Higher-order_differential_cryptanalysis"/>
+        <Class IRI="#Differential_cryptoanalysis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Impossible_differential_cryptanalysis"/>
+        <Class IRI="#Differential_cryptoanalysis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Index_of_coincidence"/>
+        <Class IRI="#MathematicalAnalysis"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Integrity"/>
         <Class IRI="#ParkerianHexad"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#KATSUMI"/>
+        <Class IRI="#SubstitutionPermutation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kasiski_examination"/>
+        <Class IRI="#MathematicalAnalysis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kerberos"/>
+        <Class IRI="#Protocols"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Key-autokey"/>
         <Class IRI="#AutoKey"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Loki"/>
+        <Class IRI="#Feistel"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Lorenz"/>
@@ -445,6 +626,10 @@
     <SubClassOf>
         <Class IRI="#Lucifer"/>
         <Class IRI="#Feistel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MAGENTA"/>
+        <Class IRI="#SubstitutionPermutation"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MD"/>
@@ -464,7 +649,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Man_in_the_middle"/>
-        <Class IRI="#Active"/>
+        <Class IRI="#Eavesdropping"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MathematicalAnalysis"/>
@@ -477,6 +662,14 @@
     <SubClassOf>
         <Class IRI="#MonoAlphabetic"/>
         <Class IRI="#Substitution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#N-gram"/>
+        <Class IRI="#Frequency_analysis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nimbus"/>
+        <Class IRI="#SubstitutionPermutation"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Non-Repudiation"/>
@@ -499,6 +692,10 @@
         <Class IRI="#Attacks"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Phishing"/>
+        <Class IRI="#SocialEngineering"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#PolyAlphabetic"/>
         <Class IRI="#Substitution"/>
     </SubClassOf>
@@ -507,8 +704,12 @@
         <Class IRI="#ParkerianHexad"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Pretexting"/>
+        <Class IRI="#SocialEngineering"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Protocols"/>
-        <Class IRI="#Cryptography"/>
+        <Class IRI="#Cryptology"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#RC4"/>
@@ -623,6 +824,14 @@
         <Class IRI="#Active"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Simon"/>
+        <Class IRI="#Feistel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Slide_attack"/>
+        <Class IRI="#Active"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#SocialEngineering"/>
         <Class IRI="#Active"/>
     </SubClassOf>
@@ -655,6 +864,10 @@
         <Class IRI="#RC4"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Telephone_tapping"/>
+        <Class IRI="#Eavesdropping"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Text-autokey"/>
         <Class IRI="#AutoKey"/>
     </SubClassOf>
@@ -675,8 +888,28 @@
         <Class IRI="#Synchronous"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Treyfer"/>
+        <Class IRI="#SubstitutionPermutation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TrojanHorse"/>
+        <Class IRI="#SocialEngineering"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Truncated_differential_cryptanalysis"/>
+        <Class IRI="#Differential_cryptoanalysis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Twofish"/>
+        <Class IRI="#SubstitutionPermutation"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Typex"/>
         <Class IRI="#Devices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UES"/>
+        <Class IRI="#SubstitutionPermutation"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#UnconditionalSecurity"/>
@@ -718,6 +951,18 @@
         <Class IRI="#XOR"/>
         <Class IRI="#PolyAlphabetic"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#XSL"/>
+        <Class IRI="#Active"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Zodiac"/>
+        <Class IRI="#Feistel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#collision_weak_attack"/>
+        <Class IRI="#Collision_attack"/>
+    </SubClassOf>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#3DES</IRI>
@@ -750,6 +995,22 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
+        <IRI>#ARIA</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/ARIA_%28cipher%29</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ARIA</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ARIA is a block cipher designed in 2003 by a large group of South Korean researchers. In 2004, the Korean Agency for Technology and Standards selected it as a standard cryptographic technique.
+The algorithm uses a substitution-permutation network structure based on AES. The interface is the same as AES: 128-bit block size with key size of 128, 192, or 256 bits. The number of rounds is 12, 14, or 16, depending on the key size. ARIA uses two 8×8-bit S-boxes and their inverses in alternate rounds; one of these is the Rijndael S-box.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Active</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This type of attack implies some modification in the data flow or creating a fake data and iject it in the network.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
         <IRI>#Affine</IRI>
         <Literal datatypeIRI="&xsd;string">https://en.wikipedia.org/wiki/Affine_cipher</Literal>
     </AnnotationAssertion>
@@ -769,9 +1030,29 @@
         <Literal datatypeIRI="&rdf;PlainLiteral">Created by Leon Battista Alberti, is the first polyalphabetic substitution symmetric algorithm known.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#Alberti&apos;s_disk</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://es.wikipedia.org/wiki/Cifrado_de_Alberti</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Alberti&apos;s_disk</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Devices that allows to implement the Alberti&apos;s algorithm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Alleged_RC4</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Non-official RSA protocol implementation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#Anubis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/Anubis_%28cipher%29</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Anubis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Anubis is a block cipher designed by Vincent Rijmen and Paulo S. L. M. Barreto as an entrant in the NESSIE project, a former research program initiated by the European Commission in 2000 for the identification of new cryptographic algorithms..</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -810,13 +1091,56 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Baiting</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Baiting is like the real-world Trojan Horse that uses physical media and relies on the curiosity or greed of the victim.
+In this attack, the attacker leaves a malware infected floppy disk, CD-ROM, or USB flash drive in a location sure to be found (bathroom, elevator, sidewalk, parking lot), gives it a legitimate looking and curiosity-piquing label, and simply waits for the victim to use the device.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#Biclique_attack</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/Biclique_attack</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Biclique_attack</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The biclique attack is a method of cryptanalysis known for having broken both full AES and full IDEA, though only with slight advantage over brute force. It has also been applied to the KASUMI cipher and preimage resistance of the Skein-512 and SHA-2 hash functions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#BlockCipher</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Cipher data in blocks instead bit by bit.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#Blowfish</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/Blowfish_%28cipher%29</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Blowfish</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Blowfish is a symmetric-key block cipher, designed in 1993 by Bruce Schneier and included in a large number of cipher suites and encryption products. Blowfish provides a good encryption rate in software and no effective cryptanalysis of it has been found to date.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#Bomba</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/Bomba_%28cryptography%29</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Bomba</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The bomba, or bomba kryptologiczna (Polish for &quot;bomb&quot; or &quot;cryptologic bomb&quot;) was a special-purpose machine designed about October 1938 by Polish Cipher Bureau cryptologist Marian Rejewski to break German Enigma-machine ciphers.
+
+</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Broadcasting</IRI>
         <Literal datatypeIRI="&xsd;string">h(D) must involve every bit of D. If one bit is changed in D, h(D) should change about half of his bits.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BruteForceAttacks</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This attack uses all possible cambination in the key space in an order way.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
@@ -835,6 +1159,21 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Collision_attack</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A collision attack on a cryptographic hash tries to find two inputs producing the same hash value, i.e. a hash collision. In contrast to a preimage attack the hash value is not specified.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Collision_attack</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/Collision_attack</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Collision_strong_attack</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Given two different prefixes p1, p2 find two appendages m1 and m2 such that hash(p1 ∥ m1) = hash(p2 ∥ m2) (where ∥ is the concatenation operation).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Computational_Security</IRI>
         <Literal datatypeIRI="&xsd;string">Said of a cipher that cannot be broken with the current computer technology within a period short enough to be practicable</Literal>
     </AnnotationAssertion>
@@ -842,6 +1181,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Confidentiality</IRI>
         <Literal datatypeIRI="&xsd;string">Confidentiality refers to limits on who can get what kind of information.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#Cool_boot_attack</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/Cold_boot_attack</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Cool_boot_attack</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">In cryptography, a cold boot attack (or to a lesser extent, a platform reset attack) is a type of side channel attack in which an attacker with physical access to a computer is able to retrieve encryption keys from a running operating system after using a cold reboot to restart the machine. The attack relies on the data remanence property of DRAM and SRAM to retrieve memory contents which remain readable in the seconds to minutes after power has been removed.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -867,6 +1216,21 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Devices</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Hardware devices that uses cryptographic algorithms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DictionaryAttacks</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This type tries to match a list of words(Dictionary) with the key.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#Differential_cryptoanalysis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/Differential_cryptanalysis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Differential_cryptoanalysis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Differential cryptanalysis is a general form of cryptanalysis applicable primarily to block ciphers, but also to stream ciphers and cryptographic hash functions. In the broadest sense, it is the study of how differences in an input can affect the resultant difference at the output. In the case of a block cipher, it refers to a set of techniques for tracing differences through the network of transformations, discovering where the cipher exhibits non-random behavior, and exploiting such properties to recover the secret key.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -910,6 +1274,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
+        <IRI>#Frequency_analysis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/Frequency_analysis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Frequency_analysis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Is the study of the frequency of letters or groups of letters in a ciphertext. The method is used as an aid to breaking classical ciphers.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
         <IRI>#GOST</IRI>
         <Literal datatypeIRI="&xsd;string">http://en.wikipedia.org/wiki/GOST_%28hash_function%29</Literal>
     </AnnotationAssertion>
@@ -921,7 +1295,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#GSM</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Protocol used in the mobile communications.</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Protocol used in the mobile communications. Uses the KATSUMI algorithm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#GuessingAttacks</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Knowing info from an user, the attacker uses it because is probably the user will used it for his passwords and access words.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
@@ -944,14 +1323,84 @@
         <Literal datatypeIRI="&xsd;string">A cryptographic hash function is a hash function that takes an arbitrary block of data and returns a fixed-size bit string, the cryptographic hash value, such that any (accidental or intentional) change to the data will (with very high probability) change the hash value. The data to be encoded are often called the message, and the hash value is sometimes called the message digest or simply digest.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#Higher-order_differential_cryptanalysis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/Higher-order_differential_cryptanalysis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Higher-order_differential_cryptanalysis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">higher-order differential cryptanalysis is a generalization of differential cryptanalysis, an attack against block ciphers. Developed in 1994 by Lars Knudsen, the technique has been applied to a number of ciphers. Whereas ordinary differential cryptanalysis analyzes the differences between two texts, the higher-order variant considers differences between differences, etc. It has been shown to be more powerful than a first-order attack in some cases (see KN-Cipher).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#Impossible_differential_cryptanalysis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/Impossible_differential_cryptanalysis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Impossible_differential_cryptanalysis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">In cryptography, impossible differential cryptanalysis is a form of differential cryptanalysis for block ciphers. While ordinary differential cryptanalysis tracks differences that propagate through the cipher with greater than expected probability, impossible differential cryptanalysis exploits differences that are impossible (having probability 0) at some intermediate state of the cipher algorithm.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#Index_of_coincidence</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/Index_of_coincidence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Index_of_coincidence</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Index of coincidence counting is the technique (invented by William F. Friedman) of putting two texts side-by-side and counting the number of times that identical letters appear in the same position in both texts. This count, either as a ratio of the total or normalized by dividing by the expected count for a random source model, is known as the index of coincidence.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Integrity</IRI>
         <Literal datatypeIRI="&xsd;string">Integrity refers to being correct or consistent with the intended state of information. Any unauthorized modification of data, whether deliberate or accidental, is a breach of data integrity.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#KATSUMI</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/KASUMI_%28block_cipher%29</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#KATSUMI</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">KASUMI is a block cipher used in UMTS, GSM, and GPRS mobile communications systems. In UMTS, KASUMI is used in the confidentiality (f8) and integrity algorithms (f9) with names UEA1 and UIA1, respectively. In GSM, KASUMI is used in the A5/3 key stream generator and in GPRS in the GEA3 key stream generator.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#Kasiski_examination</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/Kasiski_examination</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Kasiski_examination</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral"> Kasiski examination (also referred to as Kasiski&apos;s Test or Kasiski&apos;s Method) is a method of attacking polyalphabetic substitution ciphers, such as the Vigenère cipher. It was first published by Friedrich Kasiski in 1863, but seems to have been independently discovered by Charles Babbage as early as 1846.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#Kerberos</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/Kerberos_%28protocol%29</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Kerberos</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Is a computer network authentication protocol which works on the basis of &apos;tickets&apos; to allow nodes communicating over a non-secure network to prove their identity to one another in a secure manner. Its designers aimed it primarily at a client–server model and it provides mutual authentication—both the user and the server verify each other&apos;s identity. Kerberos protocol messages are protected against eavesdropping and replay attacks.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Key-autokey</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Uses previous members of the keystream to determine the next element in the keystream. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#Loki</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/LOKI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Loki</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Symmetric-key block ciphers designed as possible replacements for the Data Encryption Standard (DES). The ciphers were developed based on a body of work analysing DES, and are very similar to DES in structure. The LOKI algorithms were named for Loki, the god of mischief in Norse mythology.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
@@ -967,6 +1416,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Lucifer</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">First algorithm based in Feistel network.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#MAGENTA</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/MAGENTA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MAGENTA</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">In cryptography, MAGENTA is a symmetric key block cipher developed by Michael Jacobson Jr. and Klaus Huber for Deutsche Telekom.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1004,6 +1463,21 @@
         <Literal datatypeIRI="&xsd;string">The MD5 message-digest algorithm is a widely used cryptographic hash function producing a 128-bit (16-byte) hash value, typically expressed in text format as a 32 digit hexadecimal number. MD5 has been utilized in a wide variety of cryptographic applications, and is also commonly used to verify data integrity.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#Man_in_the_middle</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/Man-in-the-middle_attack</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Man_in_the_middle</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The man-in-the-middle attack (often abbreviated MITM, MitM, MIM, MiM, MITMA) in cryptography and computer security is a form of active eavesdropping in which the attacker makes independent connections with the victims and relays messages between them, making them believe that they are talking directly to each other over a private connection, when in fact the entire conversation is controlled by the attacker. The attacker must be able to intercept all messages going between the two victims and inject new ones, which is straightforward in many circumstances (for example, an attacker within reception range of an unencrypted Wi-Fi wireless access point, can insert himself as a man-in-the-middle).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#MathematicalAnalysis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This kind of attack uses the statistical to find out different parameters of the cipher text to try to guest the letters in the plain text.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Merkle_Hellman_knapsack</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Based in the subset-sum problem, probably it was the first algorithm with public key.</Literal>
@@ -1012,6 +1486,27 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#MonoAlphabetic</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">One letter is substituted by just one  letter.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#N-gram</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/N-gram</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#N-gram</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">n-gram is a contiguous sequence of n items from a given sequence of text or speech. The items can be phonemes, syllables, letters, words or base pairs according to the application. The n-grams typically are collected from a text or speech corpus.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#Nimbus</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/Nimbus_%28cipher%29</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Nimbus</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">In cryptography, Nimbus is a block cipher invented by Alexis Machado in 2000. The algorithm uses a 128-bit key. It operates on blocks of 64 bits and consists of 5 rounds of encryption. The round function is exceedingly simple. In each round the block is XORed with a subkey, the order of its bits is reversed, and then it is multiplied mod 264 by another subkey, which is forced to be odd.
+Nimbus was broken by Vladimir Furman; he found a differential attack using only 256 chosen plaintexts.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1043,6 +1538,16 @@ The one-time pad is unconditionally secure.
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Passive</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This type of attacks just listen the network to recover usefull info from it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Phishing</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Is a technique of fraudulently obtaining private information. Typically, the phisher sends an e-mail that appears to come from a legitimate business—a bank, or credit card company—requesting &quot;verification&quot; of information and warning of some dire consequence if it is not provided. The e-mail usually contains a link to a fraudulent web page that seems legitimate—with company logos and content—and has a form requesting everything from a home address to an ATM card&apos;s PIN.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#PolyAlphabetic</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">One letter can be substituted by many letters.</Literal>
     </AnnotationAssertion>
@@ -1050,6 +1555,11 @@ The one-time pad is unconditionally secure.
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Possession</IRI>
         <Literal datatypeIRI="&xsd;string">Refers to whether the information is controled by authorized individuals. A situation where someone steals a SEALED envelope without the possibility to open it, would imply a possession breach. We also could think about someone intercepting an encrypted email but not being able to decrypt it. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Pretexting</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Is the act of creating and using an invented scenario (the pretext) to engage a targeted victim in a manner that increases the chance the victim will divulge information or perform actions that would be unlikely in ordinary circumstances. An elaborate lie, it most often involves some prior research or setup and the use of this information for impersonation (e.g., date of birth, Social Security number, last bill amount) to establish legitimacy in the mind of the target.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1217,6 +1727,41 @@ Although RadioGatún is a derivative of Panama, a stream cipher and hash constru
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Search_in_key_space</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This kind of attack tries to guest the passwrod or the key in different ways.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#Simon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/Simon_%28cipher%29</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Simon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Simon is a family of lightweight block ciphers publicly released by the NSA in June 2013.[2] Simon has been optimized for performance in hardware implementations, while its sister algorithm, Speck, has been optimized for software implementations. Simon is a balanced Feistel cipher.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#Slide_attack</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/Slide_attack</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Slide_attack</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The slide attack is a form of cryptanalysis designed to deal with the prevailing idea that even weak ciphers can become very strong by increasing the number of rounds, which can ward off a differential attack. The slide attack works in such a way as to make the number of rounds in a cipher irrelevant. Rather than looking at the data-randomizing aspects of the block cipher, the slide attack works by analyzing the key schedule and exploiting weaknesses in it to break the cipher. The most common one is the keys repeating in a cyclic manner.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#SocialEngineering</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/Social_engineering_%28security%29</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SocialEngineering</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral"> psychological manipulation of people into performing actions or divulging confidential information.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#StreamCipher</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Cipher data bit by bit in instead blocks.</Literal>
     </AnnotationAssertion>
@@ -1244,6 +1789,16 @@ Although RadioGatún is a derivative of Panama, a stream cipher and hash constru
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#TLS</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Protocol used to transmit info safely by a network, includes the RC4 in his core.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#Telephone_tapping</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/Telephone_tapping</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Telephone_tapping</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Telephone tapping (also wire tapping or wiretapping in American English) is the monitoring of telephone and Internet conversations by a third party, often by covert means. The wire tap received its name because, historically, the monitoring connection was an actual electrical tap on the telephone line. Legal wiretapping by a government agency is also called lawful interception. Passive wiretapping monitors or records the traffic, while active wiretapping alters or otherwise affects it.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1277,6 +1832,46 @@ Although RadioGatún is a derivative of Panama, a stream cipher and hash constru
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
+        <IRI>#Treyfer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/Treyfer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Treyfer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Treyfer is a block cipher/MAC designed in 1997 by Gideon Yuval. Aimed at smart card applications, the algorithm is extremely simple and compact; it can be implemented in just 29 bytes of 8051 machine code.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#TrojanHorse</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/Trojan_horse_%28computing%29</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TrojanHorse</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Is a generally non-self-replicating type of malware program containing malicious code that, when executed, carries out actions determined by the nature of the Trojan, typically causing loss or theft of data, and possible system harm. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#Truncated_differential_cryptanalysis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/Truncated_differential_cryptanalysis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Truncated_differential_cryptanalysis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">In cryptography, truncated differential cryptanalysis is a generalization of differential cryptanalysis, an attack against block ciphers. Lars Knudsen developed the technique in 1994. Whereas ordinary differential cryptanalysis analyzes the full difference between two texts, the truncated variant considers differences that are only partially determined. That is, the attack makes predictions of only some of the bits instead of the full block. This technique has been applied to SAFER, IDEA, Skipjack, E2, Twofish, Camellia, CRYPTON, and even the stream cipher Salsa20.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#Twofish</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/Twofish</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Twofish</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Twofish is a symmetric key block cipher with a block size of 128 bits and key sizes up to 256 bits. It was one of the five finalists of the Advanced Encryption Standard contest, but it was not selected for standardization. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
         <IRI>#Typex</IRI>
         <Literal datatypeIRI="&xsd;string">https://en.wikipedia.org/wiki/Typex</Literal>
     </AnnotationAssertion>
@@ -1284,6 +1879,16 @@ Although RadioGatún is a derivative of Panama, a stream cipher and hash constru
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Typex</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Were the British cipher machines used from 1937, It was an adaptation of the commercial German Enigma .</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#UES</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/UES_%28cipher%29</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#UES</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">In cryptography, UES (Universal Encryption Standard) is a block cipher designed in 1999 by Helena Handschuh and Serge Vaudenay. They proposed it as a transitional step, to prepare for the completion of the AES process.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1354,6 +1959,32 @@ Although RadioGatún is a derivative of Panama, a stream cipher and hash constru
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#XOR</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">This algorithm makes the XOR operation between the plain-text bits and the key bits.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#XSL</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/XSL_attack</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#XSL</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">In cryptography, the eXtended Sparse Linearization (XSL) attack is a method of cryptanalysis for block ciphers. The attack was first published in 2002 by researchers Nicolas Courtois and Josef Pieprzyk. It has caused some controversy as it was claimed to have the potential to break the Advanced Encryption Standard (AES) cipher, also known as Rijndael, faster than an exhaustive search. Since AES is already widely used in commerce and government for the transmission of secret information, finding a technique that can shorten the amount of time it takes to retrieve the secret message without having the key could have wide implications.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#Zodiac</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/Zodiac_%28cipher%29</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Zodiac</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">In cryptography, Zodiac is a block cipher designed in 2000 by Chang-Hyi Lee for the Korean firm SoftForum.
+Zodiac uses a 16-round Feistel network structure with key whitening. The round function uses only XORs and S-box lookups. There are two 8×8-bit S-boxes: one based on the discrete exponentiation 45x as in SAFER, the other using the multiplicative inverse in the finite field GF(28), as introduced by SHARK.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#collision_weak_attack</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Find two different messages m1 and m2 such that hash(m1) = hash(m2).</Literal>
     </AnnotationAssertion>
     <SubAnnotationPropertyOf>
         <AnnotationProperty IRI="#reference"/>
