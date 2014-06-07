@@ -1067,7 +1067,7 @@ The algorithm uses a substitution-permutation network structure based on AES. Th
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Attacks</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Several methods to find the key of a cryptographic algorithm or find the way to read the chipered text.</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Several methods to find the key of a cryptographic algorithm or find the way to read the ciphered text.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
