@@ -22,16 +22,43 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
+        <Class IRI="#3DES"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#A5/1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#A5/2"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#AES"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#ARC4"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ARCFOUR"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Active"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Affine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Alberti"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Alleged_RC4"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Asymmetric"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Asynchronous"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Attacks"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Authenticity"/>
@@ -52,12 +79,6 @@
         <Class IRI="#Caesar"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Classical"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Collision_INVENTADO"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Collision_Resistant"/>
     </Declaration>
     <Declaration>
@@ -65,9 +86,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Confidentiality"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Cryptanalysis"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Cryptography"/>
@@ -82,7 +100,25 @@
         <Class IRI="#DesirableProperties"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ElectroMechanical"/>
+        <Class IRI="#Devices"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DictionaryAttacks"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ECDH"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ECDSA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Eavesdropping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElGamal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElGamal_elliptic"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Enigma"/>
@@ -91,19 +127,34 @@
         <Class IRI="#Feistel"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#HashFunctions"/>
+        <Class IRI="#GSM"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ImplementationAttacks"/>
+        <Class IRI="#GuessingAttacks"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HashFunctions"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Integrity"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Key-autokey"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Lorenz"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Lucifer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Man_in_the_middle"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#MathematicalAnalysis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Merkle_Hellman_knapsack"/>
     </Declaration>
     <Declaration>
         <Class IRI="#MonoAlphabetic"/>
@@ -118,6 +169,9 @@
         <Class IRI="#ParkerianHexad"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Passive"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#PolyAlphabetic"/>
     </Declaration>
     <Declaration>
@@ -125,6 +179,24 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Protocols"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RC4"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RFC-3826"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RSA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SNMP"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Scytale"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Search_in_key_space"/>
     </Declaration>
     <Declaration>
         <Class IRI="#SocialEngineering"/>
@@ -148,6 +220,12 @@
         <Class IRI="#Synchronous"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#TLS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Text-autokey"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Transposition"/>
     </Declaration>
     <Declaration>
@@ -163,7 +241,16 @@
         <Class IRI="#Vigenere"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#WAP"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WEP"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Weak_Resistance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wireless_card"/>
     </Declaration>
     <Declaration>
         <Class IRI="#XOR"/>
@@ -172,12 +259,44 @@
         <AnnotationProperty IRI="#reference"/>
     </Declaration>
     <SubClassOf>
+        <Class IRI="#3DES"/>
+        <Class IRI="#Feistel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A5/1"/>
+        <Class IRI="#GSM"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A5/2"/>
+        <Class IRI="#GSM"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#AES"/>
         <Class IRI="#SubstitutionPermutation"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#ARC4"/>
+        <Class IRI="#Protocols"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ARCFOUR"/>
+        <Class IRI="#Protocols"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Active"/>
+        <Class IRI="#Attacks"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Affine"/>
         <Class IRI="#MonoAlphabetic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Alberti"/>
+        <Class IRI="#PolyAlphabetic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Alleged_RC4"/>
+        <Class IRI="#Protocols"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Asymmetric"/>
@@ -186,6 +305,10 @@
     <SubClassOf>
         <Class IRI="#Asynchronous"/>
         <Class IRI="#StreamCipher"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Attacks"/>
+        <Class IRI="#Cryptology"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Authenticity"/>
@@ -209,19 +332,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#BruteForceAttacks"/>
-        <Class IRI="#Classical"/>
+        <Class IRI="#Search_in_key_space"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Caesar"/>
         <Class IRI="#MonoAlphabetic"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Classical"/>
-        <Class IRI="#Cryptanalysis"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Collision_INVENTADO"/>
-        <Class IRI="#DesirableProperties"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Collision_Resistant"/>
@@ -234,10 +349,6 @@
     <SubClassOf>
         <Class IRI="#Confidentiality"/>
         <Class IRI="#ParkerianHexad"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Cryptanalysis"/>
-        <Class IRI="#Cryptology"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Cryptography"/>
@@ -256,16 +367,40 @@
         <Class IRI="#Cryptography"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Devices"/>
+        <Class IRI="#Cryptology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DictionaryAttacks"/>
+        <Class IRI="#Search_in_key_space"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ECDH"/>
+        <Class IRI="#Protocols"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ECDSA"/>
+        <Class IRI="#Protocols"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Easy_and_Fast_to_calculate"/>
         <Class IRI="#DesirableProperties"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#ElectroMechanical"/>
-        <Class IRI="#Substitution"/>
+        <Class IRI="#Eavesdropping"/>
+        <Class IRI="#Passive"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElGamal"/>
+        <Class IRI="#Asymmetric"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElGamal_elliptic"/>
+        <Class IRI="#Asymmetric"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Enigma"/>
-        <Class IRI="#ElectroMechanical"/>
+        <Class IRI="#Devices"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Feistel"/>
@@ -280,6 +415,14 @@
         <Class IRI="#HashFunctions"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#GSM"/>
+        <Class IRI="#Protocols"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GuessingAttacks"/>
+        <Class IRI="#Search_in_key_space"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#HAVAL"/>
         <Class IRI="#HashFunctions"/>
     </SubClassOf>
@@ -288,16 +431,20 @@
         <Class IRI="#Cryptography"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#ImplementationAttacks"/>
-        <Class IRI="#Cryptanalysis"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Integrity"/>
         <Class IRI="#ParkerianHexad"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Key-autokey"/>
+        <Class IRI="#AutoKey"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Lorenz"/>
-        <Class IRI="#ElectroMechanical"/>
+        <Class IRI="#Devices"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lucifer"/>
+        <Class IRI="#Feistel"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MD"/>
@@ -316,8 +463,16 @@
         <Class IRI="#MD"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Man_in_the_middle"/>
+        <Class IRI="#Active"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#MathematicalAnalysis"/>
-        <Class IRI="#Classical"/>
+        <Class IRI="#Active"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Merkle_Hellman_knapsack"/>
+        <Class IRI="#Asymmetric"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MonoAlphabetic"/>
@@ -340,6 +495,10 @@
         <Class IRI="#DesirableProperties"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Passive"/>
+        <Class IRI="#Attacks"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#PolyAlphabetic"/>
         <Class IRI="#Substitution"/>
     </SubClassOf>
@@ -350,6 +509,14 @@
     <SubClassOf>
         <Class IRI="#Protocols"/>
         <Class IRI="#Cryptography"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RC4"/>
+        <Class IRI="#Protocols"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RFC-3826"/>
+        <Class IRI="#SNMP"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#RIPEMD"/>
@@ -370,6 +537,10 @@
     <SubClassOf>
         <Class IRI="#RIPEMD-320"/>
         <Class IRI="#RIPEMD"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RSA"/>
+        <Class IRI="#Asymmetric"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#RTR0"/>
@@ -440,8 +611,20 @@
         <Class IRI="#SHA-3"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#SNMP"/>
+        <Class IRI="#Protocols"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Scytale"/>
+        <Class IRI="#Transposition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Search_in_key_space"/>
+        <Class IRI="#Active"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#SocialEngineering"/>
-        <Class IRI="#Cryptanalysis"/>
+        <Class IRI="#Active"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#StreamCipher"/>
@@ -468,6 +651,14 @@
         <Class IRI="#StreamCipher"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#TLS"/>
+        <Class IRI="#RC4"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Text-autokey"/>
+        <Class IRI="#AutoKey"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Tiger"/>
         <Class IRI="#HashFunctions"/>
     </SubClassOf>
@@ -485,7 +676,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Typex"/>
-        <Class IRI="#ElectroMechanical"/>
+        <Class IRI="#Devices"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#UnconditionalSecurity"/>
@@ -504,6 +695,14 @@
         <Class IRI="#PolyAlphabetic"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#WAP"/>
+        <Class IRI="#RC4"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WEP"/>
+        <Class IRI="#RC4"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#WHIRLPOOL"/>
         <Class IRI="#HashFunctions"/>
     </SubClassOf>
@@ -512,18 +711,82 @@
         <Class IRI="#Collision_Resistant"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Wireless_card"/>
+        <Class IRI="#Devices"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#XOR"/>
         <Class IRI="#PolyAlphabetic"/>
     </SubClassOf>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#3DES</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Algorithm that makes DES three times.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#A5/1</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Implementation used in Europe and EEUU.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#A5/2</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Weak version used in many countries.</Literal>
+    </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
         <IRI>#AES</IRI>
         <Literal datatypeIRI="&xsd;string">https://en.wikipedia.org/wiki/Advanced_Encryption_Standard</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ARC4</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Non-official RSA protocol implementation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ARCFOUR</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Non-official RSA protocol implementation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
         <IRI>#Affine</IRI>
         <Literal datatypeIRI="&xsd;string">https://en.wikipedia.org/wiki/Affine_cipher</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Affine</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">In this algorithm each letter in an alphabet is mapped to its numeric equivalent, encrypted using a simple mathematical function, and converted back to a letter.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#Alberti</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://es.wikipedia.org/wiki/Cifrado_de_Alberti</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Alberti</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Created by Leon Battista Alberti, is the first polyalphabetic substitution symmetric algorithm known.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Alleged_RC4</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Non-official RSA protocol implementation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Asymmetric</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This type of cryptography uses a private key for each user and a public key for everyone. The first is used to decipher and the second to cipher</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Asynchronous</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The key steam also depends on the chipertext.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Attacks</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Several methods to find the key of a cryptographic algorithm or find the way to read the chipered text.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -537,8 +800,18 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AutoKey</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">An autokey cipher (also known as the autoclave cipher) is a cipher which incorporates the message (the plaintext) into the key.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Availability</IRI>
         <Literal datatypeIRI="&xsd;string">Availability means having timely access to information. For example, a disk crash or denial-of-service attacks both cause a breach of availability. Any delay that exceeds the expected service levels for a system can be described as a breach of availability.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BlockCipher</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Cipher data in blocks instead bit by bit.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -549,6 +822,11 @@
         <AnnotationProperty IRI="#reference"/>
         <IRI>#Caesar</IRI>
         <Literal datatypeIRI="&xsd;string">https://en.wikipedia.org/wiki/Caesar_cipher</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Caesar</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Is one of the simplest and most widely known encryption techniques.In the algorithm each letter in the plaintext is replaced by a letter some fixed number of positions down the alphabet.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -577,13 +855,53 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DES</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Algorithm based in Lucifer.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DesirableProperties</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Properties that are desirable in criptographic functions or algorithms.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Devices</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Hardware devices that uses cryptographic algorithms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ECDH</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The full name of this algorithm is EC Diffie-Hellman. Is based in the ElGamal elliptic algorithm.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ECDSA</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The full name of this protocol is EC Digital Signature Algorithm. Is based in the ELGamal elliptic algorithm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Easy_and_Fast_to_calculate</IRI>
         <Literal datatypeIRI="&xsd;string">The algorithm is easy to calculate and fast to execute.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ElGamal</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Scheme based in discrete logarithm math problems, based in the Diffie-Hellman idea</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ElGamal_elliptic</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Is like the classical ElGamal algorithm but uses elliptic arithmetic.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
         <IRI>#Enigma</IRI>
         <Literal datatypeIRI="&xsd;string">https://en.wikipedia.org/wiki/Enigma_machine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Enigma</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Machine invented at the end of the first world war, it uses the Alberti algorithm</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -599,6 +917,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#GOST</IRI>
         <Literal datatypeIRI="&xsd;string">is a 256-bit cryptographic hash function. It was initially defined in the Russian national standard GOST R 34.11-94 Information Technology - Cryptographic Information Security - Hash Function. The equivalent standard used by other member-states of the CIS is GOST 34.311-95.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#GSM</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Protocol used in the mobile communications.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
@@ -626,9 +949,24 @@
         <Literal datatypeIRI="&xsd;string">Integrity refers to being correct or consistent with the intended state of information. Any unauthorized modification of data, whether deliberate or accidental, is a breach of data integrity.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Key-autokey</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Uses previous members of the keystream to determine the next element in the keystream. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
         <IRI>#Lorenz</IRI>
         <Literal datatypeIRI="&xsd;string">https://en.wikipedia.org/wiki/Lorenz_SZ_40/42</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Lorenz</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">German Army Machine used during the second world war, it uses the Vernam algorithm.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Lucifer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">First algorithm based in Feistel network.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -667,6 +1005,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Merkle_Hellman_knapsack</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Based in the subset-sum problem, probably it was the first algorithm with public key.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MonoAlphabetic</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">One letter is substituted by just one  letter.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Non-Repudiation</IRI>
         <Literal datatypeIRI="&xsd;string">Non-repudiation refers to a state of affairs where the purported maker of a statement will not be able to successfully challenge the validity of the statement or contract. If an attacker could repudiate a message we might not be able to identify such individual as malicious.</Literal>
     </AnnotationAssertion>
@@ -695,8 +1043,28 @@ The one-time pad is unconditionally secure.
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PolyAlphabetic</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">One letter can be substituted by many letters.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Possession</IRI>
         <Literal datatypeIRI="&xsd;string">Refers to whether the information is controled by authorized individuals. A situation where someone steals a SEALED envelope without the possibility to open it, would imply a possession breach. We also could think about someone intercepting an encrypted email but not being able to decrypt it. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Protocols</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Implementations used today of different algorithms. Protocols are programs acepted as standar and used in differente applications.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RC4</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Official RSA based implementation, it can&apos;t be used with this name because the RSA Security has never  released the code,</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RFC-3826</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Implementation using AES</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
@@ -727,6 +1095,11 @@ The one-time pad is unconditionally secure.
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#RIPEMD-320</IRI>
         <Literal datatypeIRI="&xsd;string">The 320-bit versions diminish only the chance of accidental collision, and don&apos;t have higher levels of security (against preimage attacks) as compared to, respectively, RIPEMD-128 and RIPEMD-160.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RSA</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This algorithm is based in the difficulty to factorize big primes</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
@@ -829,8 +1202,53 @@ Although RadioGatún is a derivative of Panama, a stream cipher and hash constru
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SNMP</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Protocol from the application layer that allows admin info exchange between  network devices.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#Scytale</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://www.uv.es/~montanan/redes/trabajos/enigma.pdf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Scytale</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">System used by the spartans to send messages.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#StreamCipher</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Cipher data bit by bit in instead blocks.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Strong_Resistance</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Should be computationally infeasible to find D and D&apos; such that h(D) = h(D&apos;)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Substitution</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Substitute the letters from a message with others from an alphabet.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Symmetric</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This type of cryptography uses a key to chiper and decipher messages.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Synchronous</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The key steam depends only on the key.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TLS</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Protocol used to transmit info safely by a network, includes the RC4 in his core.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Text-autokey</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Uses the previous message text to determine the next element in the keystream. </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
@@ -853,9 +1271,19 @@ Although RadioGatún is a derivative of Panama, a stream cipher and hash constru
         <Literal datatypeIRI="&xsd;string">Is a variant where the message is padded by first appending a byte with the hexadecimal value of 0x80 as in MD4, MD5 and SHA, rather than with the hexadecimal value of 0x01 as in the case of Tiger.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Transposition</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">It changes the order of the letters in the message</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
         <IRI>#Typex</IRI>
         <Literal datatypeIRI="&xsd;string">https://en.wikipedia.org/wiki/Typex</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Typex</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Were the British cipher machines used from 1937, It was an adaptation of the commercial German Enigma .</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -878,6 +1306,21 @@ Although RadioGatún is a derivative of Panama, a stream cipher and hash constru
         <Literal datatypeIRI="&xsd;string">https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Vigenere</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Is a method of encrypting alphabetic text by using a series of different Caesar ciphers based on the letters of a keyword. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#WAP</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Protocol used in wireless cards, includes the RC4 in his core.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#WEP</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Protocol used in wireless cards, includes the RC4 in his core.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
         <IRI>#WHIRLPOOL</IRI>
         <Literal datatypeIRI="&xsd;string">http://en.wikipedia.org/wiki/WHIRLPOOL</Literal>
@@ -894,8 +1337,23 @@ Although RadioGatún is a derivative of Panama, a stream cipher and hash constru
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
+        <IRI>#Wireless_card</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/Wireless_network_interface_controller</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Wireless_card</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Is a network interface which connects computers  in a network without wires.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
         <IRI>#XOR</IRI>
         <Literal datatypeIRI="&xsd;string">https://en.wikipedia.org/wiki/Xor_cipher</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#XOR</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This algorithm makes the XOR operation between the plain-text bits and the key bits.</Literal>
     </AnnotationAssertion>
     <SubAnnotationPropertyOf>
         <AnnotationProperty IRI="#reference"/>
