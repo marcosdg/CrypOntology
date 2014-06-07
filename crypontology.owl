@@ -1193,6 +1193,16 @@ In this attack, the attacker leaves a malware infected floppy disk, CD-ROM, or U
         <Literal datatypeIRI="&rdf;PlainLiteral">In cryptography, a cold boot attack (or to a lesser extent, a platform reset attack) is a type of side channel attack in which an attacker with physical access to a computer is able to retrieve encryption keys from a running operating system after using a cold reboot to restart the machine. The attack relies on the data remanence property of DRAM and SRAM to retrieve memory contents which remain readable in the seconds to minutes after power has been removed.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#Cryptography</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/Cryptography</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Cryptography</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral"> Is the practice and study of techniques for secure communication in the presence of third parties (called adversaries)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Cryptology</IRI>
         <Literal datatypeIRI="&xsd;string">Cryptology is the science derived from Mathematics that is concerned with data communication and storage in a secure way.</Literal>
