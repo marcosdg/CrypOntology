@@ -364,13 +364,25 @@
         <ObjectProperty IRI="#basedOnCipher"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#basedOnHash"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#basedOnProtocol"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#has"/>
+        <ObjectProperty IRI="#hasProperty"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasPerfectSecret"/>
+        <ObjectProperty IRI="#implements"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isBetterThan"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isFasterThan"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isLessInsecureThan"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#resistantTo"/>
@@ -385,28 +397,102 @@
         <AnnotationProperty IRI="#reference"/>
     </Declaration>
     <EquivalentClasses>
+        <Class IRI="#Attacks"/>
+        <ObjectUnionOf>
+            <Class IRI="#Active"/>
+            <Class IRI="#Passive"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#OTP"/>
         <Class IRI="#UnconditionalSecurity"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#StreamCipher"/>
+        <ObjectUnionOf>
+            <Class IRI="#Asynchronous"/>
+            <Class IRI="#Synchronous"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Symmetric"/>
+        <ObjectUnionOf>
+            <Class IRI="#BlockCipher"/>
+            <Class IRI="#StreamCipher"/>
+        </ObjectUnionOf>
     </EquivalentClasses>
     <SubClassOf>
         <Class IRI="#3DES"/>
         <Class IRI="#Feistel"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#3DES"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#basedOnCipher"/>
+            <Class IRI="#DES"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#A5/1"/>
         <Class IRI="#GSM"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#A5/1"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#isLessInsecureThan"/>
+            <Class IRI="#A5/2"/>
+        </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#A5/2"/>
         <Class IRI="#GSM"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#A5/2"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#basedOnProtocol"/>
+            <Class IRI="#A5/1"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#AES"/>
         <Class IRI="#SubstitutionPermutation"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#AES"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#basedOnCipher"/>
+            <ObjectUnionOf>
+                <Class IRI="#3DES"/>
+                <Class IRI="#DES"/>
+                <Class IRI="#UES"/>
+            </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AES"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#vulnerableTo"/>
+            <Class IRI="#Biclique-attack"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#ARIA"/>
         <Class IRI="#SubstitutionPermutation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ARIA"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#basedOnCipher"/>
+            <Class IRI="#AES"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ARIA"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#vulnerableTo"/>
+            <Class IRI="#Impossible-Differential-Cryptanalysis"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Accountability"/>
@@ -421,8 +507,26 @@
         <Class IRI="#MonoAlphabetic"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Affine"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#vulnerableTo"/>
+            <ObjectUnionOf>
+                <Class IRI="#BruteForceAttacks"/>
+                <Class IRI="#DictionaryAttacks"/>
+                <Class IRI="#Frequency-Analysis"/>
+            </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Alberti"/>
         <Class IRI="#PolyAlphabetic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Alberti"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#vulnerableTo"/>
+            <Class IRI="#Kasiski-examination"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Alberti&apos;s-Disk"/>
@@ -461,19 +565,24 @@
         <Class IRI="#Cryptology"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Attacks"/>
-        <ObjectUnionOf>
-            <Class IRI="#Active"/>
-            <Class IRI="#Passive"/>
-        </ObjectUnionOf>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Authenticity"/>
         <Class IRI="#Parkerian-Hexad"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#AutoKey"/>
         <Class IRI="#PolyAlphabetic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AutoKey"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#vulnerableTo"/>
+            <ObjectUnionOf>
+                <Class IRI="#BruteForceAttacks"/>
+                <Class IRI="#DictionaryAttacks"/>
+                <Class IRI="#Frequency-Analysis"/>
+                <Class IRI="#GuessingAttacks"/>
+            </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Availability"/>
@@ -496,6 +605,13 @@
         <Class IRI="#SubstitutionPermutation"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Blowfish"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasProperty"/>
+            <Class IRI="#Computational-Security"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Bomba"/>
         <Class IRI="#Devices"/>
     </SubClassOf>
@@ -510,6 +626,17 @@
     <SubClassOf>
         <Class IRI="#Caesar"/>
         <Class IRI="#MonoAlphabetic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Caesar"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#vulnerableTo"/>
+            <ObjectUnionOf>
+                <Class IRI="#BruteForceAttacks"/>
+                <Class IRI="#DictionaryAttacks"/>
+                <Class IRI="#Frequency-Analysis"/>
+            </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Collision-Resistant"/>
@@ -588,8 +715,22 @@
         <Class IRI="#Protocols"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#ECDH"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#implements"/>
+            <Class IRI="#ElGamal-Elliptic"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#ECDSA"/>
         <Class IRI="#Protocols"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ECDSA"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#implements"/>
+            <Class IRI="#ElGamal-Elliptic"/>
+        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Easy-and-Fast-to-calculate"/>
@@ -630,6 +771,13 @@
     <SubClassOf>
         <Class IRI="#GSM"/>
         <Class IRI="#Protocols"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GSM"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#implements"/>
+            <Class IRI="#KATSUMI"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#GuessingAttacks"/>
@@ -680,6 +828,13 @@
         <Class IRI="#Feistel"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Loki"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#basedOnCipher"/>
+            <Class IRI="#DES"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Lorenz"/>
         <Class IRI="#Devices"/>
     </SubClassOf>
@@ -708,6 +863,20 @@
         <Class IRI="#MD"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#MD5"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#basedOnHash"/>
+            <Class IRI="#MD4"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MD5"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#vulnerableTo"/>
+            <Class IRI="#MathematicalAnalysis"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Man-in-the-Middle"/>
         <Class IRI="#Eavesdropping"/>
     </SubClassOf>
@@ -730,6 +899,13 @@
     <SubClassOf>
         <Class IRI="#Nimbus"/>
         <Class IRI="#SubstitutionPermutation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nimbus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#vulnerableTo"/>
+            <Class IRI="#Differential-Cryptanalysis"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Non-Repudiation"/>
@@ -776,8 +952,22 @@
         <Class IRI="#Protocols"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#RC4"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#implements"/>
+            <Class IRI="#RSA"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#RFC-3826"/>
         <Class IRI="#SNMP"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RFC-3826"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#implements"/>
+            <Class IRI="#AES"/>
+        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#RIPEMD"/>
@@ -804,12 +994,26 @@
         <Class IRI="#Asymmetric"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#RSA"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#vulnerableTo"/>
+            <Class IRI="#Man-in-the-Middle"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#RTR0"/>
         <Class IRI="#HashFunctions"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#RadioGatun"/>
         <Class IRI="#HashFunctions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RadioGatun"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#basedOnHash"/>
+            <Class IRI="#PANAMA"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SHA"/>
@@ -822,6 +1026,13 @@
     <SubClassOf>
         <Class IRI="#SHA-1"/>
         <Class IRI="#SHA"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SHA-1"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#basedOnHash"/>
+            <Class IRI="#MD4"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SHA-2"/>
@@ -848,12 +1059,33 @@
         <Class IRI="#SHA-2"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#SHA-2-512/224"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#basedOnHash"/>
+            <Class IRI="#SHA-2-512"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#SHA-2-512/256"/>
         <Class IRI="#SHA-2"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#SHA-2-512/256"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#basedOnHash"/>
+            <Class IRI="#SHA-2-512"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#SHA-3"/>
         <Class IRI="#SHA"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SHA-3"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#basedOnHash"/>
+            <Class IRI="#RadioGatun"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SHA-3-224"/>
@@ -900,13 +1132,6 @@
         <Class IRI="#Symmetric"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#StreamCipher"/>
-        <ObjectUnionOf>
-            <Class IRI="#Asynchronous"/>
-            <Class IRI="#Synchronous"/>
-        </ObjectUnionOf>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Strong-Resistance"/>
         <Class IRI="#Collision-Resistant"/>
     </SubClassOf>
@@ -930,13 +1155,6 @@
         <Class IRI="#Cryptography"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Symmetric"/>
-        <ObjectUnionOf>
-            <Class IRI="#BlockCipher"/>
-            <Class IRI="#StreamCipher"/>
-        </ObjectUnionOf>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Synchronous"/>
         <Class IRI="#StreamCipher"/>
     </SubClassOf>
@@ -950,6 +1168,16 @@
     <SubClassOf>
         <Class IRI="#TLS"/>
         <Class IRI="#RC4"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TLS"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#implements"/>
+            <ObjectUnionOf>
+                <Class IRI="#MD5"/>
+                <Class IRI="#SHA-1"/>
+            </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Telephone-tapping"/>
@@ -980,6 +1208,13 @@
         <Class IRI="#SubstitutionPermutation"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Treyfer"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasProperty"/>
+            <Class IRI="#Easy-and-Fast-to-calculate"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#TrojanHorse"/>
         <Class IRI="#SocialEngineering"/>
     </SubClassOf>
@@ -990,6 +1225,23 @@
     <SubClassOf>
         <Class IRI="#Twofish"/>
         <Class IRI="#SubstitutionPermutation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Twofish"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isLessInsecureThan"/>
+            <Class IRI="#DES"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Twofish"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#vulnerableTo"/>
+            <ObjectUnionOf>
+                <Class IRI="#Impossible-Differential-Cryptanalysis"/>
+                <Class IRI="#Truncated-Differential-Cryptanalysis"/>
+            </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Typex"/>
@@ -1016,8 +1268,29 @@
         <Class IRI="#PolyAlphabetic"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Vigenere"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#basedOnCipher"/>
+            <Class IRI="#Caesar"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vigenere"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#vulnerableTo"/>
+            <Class IRI="#Kasiski-examination"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#WAP"/>
         <Class IRI="#RC4"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WAP"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#basedOnProtocol"/>
+            <Class IRI="#WEP"/>
+        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#WEP"/>
@@ -1040,12 +1313,26 @@
         <Class IRI="#PolyAlphabetic"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#XOR"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#vulnerableTo"/>
+            <Class IRI="#Frequency-Analysis"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#XSL"/>
         <Class IRI="#Active"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Zodiac"/>
         <Class IRI="#Feistel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Zodiac"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#vulnerableTo"/>
+            <Class IRI="#Impossible-Differential-Cryptanalysis"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <DisjointClasses>
         <Class IRI="#3DES"/>
@@ -1245,20 +1532,25 @@
         <ObjectProperty IRI="#basedOn"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#basedOnHash"/>
+        <ObjectProperty IRI="#basedOn"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#basedOnProtocol"/>
         <ObjectProperty IRI="#basedOn"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#hasPerfectSecret"/>
-        <ObjectProperty IRI="#has"/>
+        <ObjectProperty IRI="#isFasterThan"/>
+        <ObjectProperty IRI="#isBetterThan"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isLessInsecureThan"/>
+        <ObjectProperty IRI="#isBetterThan"/>
     </SubObjectPropertyOf>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#threatens"/>
         <ObjectProperty IRI="#vulnerableTo"/>
+        <ObjectProperty IRI="#threatens"/>
     </InverseObjectProperties>
-    <FunctionalObjectProperty>
-        <ObjectProperty IRI="#hasPerfectSecret"/>
-    </FunctionalObjectProperty>
     <AsymmetricObjectProperty>
         <ObjectProperty IRI="#basedOn"/>
     </AsymmetricObjectProperty>
@@ -1269,7 +1561,7 @@
         <ObjectProperty IRI="#basedOnProtocol"/>
     </AsymmetricObjectProperty>
     <AsymmetricObjectProperty>
-        <ObjectProperty IRI="#has"/>
+        <ObjectProperty IRI="#hasProperty"/>
     </AsymmetricObjectProperty>
     <AsymmetricObjectProperty>
         <ObjectProperty IRI="#resistantTo"/>
@@ -1288,19 +1580,24 @@
         </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#basedOnHash"/>
+        <Class IRI="#HashFunctions"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#basedOnProtocol"/>
         <Class IRI="#Protocols"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has"/>
+        <ObjectProperty IRI="#hasProperty"/>
         <Class abbreviatedIRI="owl:Thing"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasPerfectSecret"/>
-        <ObjectUnionOf>
-            <Class IRI="#Asymmetric"/>
-            <Class IRI="#Symmetric"/>
-        </ObjectUnionOf>
+        <ObjectProperty IRI="#implements"/>
+        <Class IRI="#Protocols"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isBetterThan"/>
+        <Class abbreviatedIRI="owl:Thing"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#resistantTo"/>
@@ -1334,11 +1631,27 @@
         </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#basedOnHash"/>
+        <Class IRI="#HashFunctions"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#basedOnProtocol"/>
         <Class IRI="#Protocols"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#has"/>
+        <ObjectProperty IRI="#hasProperty"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#implements"/>
+        <ObjectUnionOf>
+            <Class IRI="#Asymmetric"/>
+            <Class IRI="#HashFunctions"/>
+            <Class IRI="#Symmetric"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isBetterThan"/>
         <Class abbreviatedIRI="owl:Thing"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -1401,7 +1714,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#AES</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">AES (Advanced Encryption Standard) is based on the Rijndael cipher. Thus, unlike its predecesor DES, it does not use a Feistel  Network. AES was approved by the NIST (National Security Agency) after realizing that DES was insecure</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AES (Advanced Encryption Standard) is based on the Rijndael cipher. Thus, unlike its predecesor DES, it does not use a Feistel Network. AES was approved by the NIST (National Security Agency) after realizing that DES was insecure</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
@@ -1720,7 +2033,7 @@ In this attack, the attacker leaves a malware infected floppy disk, CD-ROM, or U
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#ECDH</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">The full name of this algorithm is EC Diffie-Hellman. Is based in the ElGamal elliptic algorithm.</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The full name of this algorithm is EC Diffie-Hellman. Is based on the ElGamal elliptic algorithm.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
@@ -1730,7 +2043,7 @@ In this attack, the attacker leaves a malware infected floppy disk, CD-ROM, or U
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#ECDSA</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">The full name of this protocol is EC Digital Signature Algorithm. Is based in the ELGamal elliptic algorithm</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The full name of this protocol is EC Digital Signature Algorithm. Is based on the ELGamal elliptic algorithm</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1773,6 +2086,11 @@ In this attack, the attacker leaves a malware infected floppy disk, CD-ROM, or U
         <Literal datatypeIRI="&rdf;PlainLiteral">Machine invented at the end of the first world war, it uses the Alberti algorithm</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="#reference"/>
+        <IRI>#Feistel</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">https://en.wikipedia.org/wiki/Feistel_network</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Fixed-length-digest</IRI>
         <Literal datatypeIRI="&xsd;string">Summary size of h(D) should be fixed (defined by function), without depending on the size of D</Literal>
@@ -1795,7 +2113,7 @@ In this attack, the attacker leaves a malware infected floppy disk, CD-ROM, or U
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#GOST</IRI>
-        <Literal datatypeIRI="&xsd;string">is a 256-bit cryptographic hash function. It was initially defined in the Russian national standard GOST R 34.11-94 Information Technology - Cryptographic Information Security - Hash Function. The equivalent standard used by other member-states of the CIS is GOST 34.311-95.</Literal>
+        <Literal datatypeIRI="&xsd;string">Is a 256-bit cryptographic hash function. It was initially defined in the Russian national standard GOST R 34.11-94 Information Technology - Cryptographic Information Security - Hash Function. The equivalent standard used by other member-states of the CIS is GOST 34.311-95.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
@@ -1805,7 +2123,7 @@ In this attack, the attacker leaves a malware infected floppy disk, CD-ROM, or U
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#GSM</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Protocol used in the mobile communications. Uses the KATSUMI algorithm</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Protocol used in mobile communications. Uses the KATSUMI algorithm</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1875,7 +2193,7 @@ In this attack, the attacker leaves a malware infected floppy disk, CD-ROM, or U
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#KATSUMI</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">KASUMI is a block cipher used in UMTS, GSM, and GPRS mobile communications systems. In UMTS, KASUMI is used in the confidentiality (f8) and integrity algorithms (f9) with names UEA1 and UIA1, respectively. In GSM, KASUMI is used in the A5/3 key stream generator and in GPRS in the GEA3 key stream generator.</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">KASUMI is a block cipher used in UMTS, GSM, and GPRS mobile communications systems. In UMTS, KASUMI is used in the confidentiality (f8) and integrity algorithms (f9) with names UEA1 and UIA1, respectively. In GSM, KATSUMI is used in the A5/3 key stream generator and in GPRS in the GEA3 key stream generator.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
@@ -2094,7 +2412,7 @@ The one-time pad is unconditionally secure.
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#RC4</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Official RSA based implementation, it can&apos;t be used with this name because the RSA Security has never  released the code,</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Official RSA based implementation, it can&apos;t be used with this name because the RSA Security Agency has never released the code,</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
@@ -2564,18 +2882,23 @@ Zodiac uses a 16-round Feistel network structure with key whitening. The round f
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#basedOnHash</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Binary predicate to indicate that some hash function is based on another</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#basedOnProtocol</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Binary predicate to indicate that a protocol is inspired by other protocols.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#has</IRI>
+        <IRI>#hasProperty</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Defines a binary predicate to indicate that something owns or posseses something. Useful to define properties of objects</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#hasPerfectSecret</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Indicates that a cipher is unbreakable, even with infinite computational resources.</Literal>
+        <IRI>#implements</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Indicates what mechanisms a protocol implements</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
