@@ -49,7 +49,7 @@
         <Class IRI="#Alberti"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Alberti&apos;s_disk"/>
+        <Class IRI="#Alberti&apos;s-Disk"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Anonymity"/>
@@ -79,7 +79,7 @@
         <Class IRI="#Baiting"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Biclique_attack"/>
+        <Class IRI="#Biclique-attack"/>
     </Declaration>
     <Declaration>
         <Class IRI="#BlockCipher"/>
@@ -97,22 +97,25 @@
         <Class IRI="#Caesar"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Collision_Resistant"/>
+        <Class IRI="#Collision-Resistant"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Collision_attack"/>
+        <Class IRI="#Collision-attack"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Collision_strong_attack"/>
+        <Class IRI="#Collision-strong-attack"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Computational_Security"/>
+        <Class IRI="#Collision-weak-attack"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Computational-Security"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Confidentiality"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Cool_boot_attack"/>
+        <Class IRI="#Cool-boot-attack"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Cryptography"/>
@@ -133,7 +136,7 @@
         <Class IRI="#DictionaryAttacks"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Differential_cryptoanalysis"/>
+        <Class IRI="#Differential-Cryptanalysis"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ECDH"/>
@@ -148,7 +151,7 @@
         <Class IRI="#ElGamal"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ElGamal_elliptic"/>
+        <Class IRI="#ElGamal-Elliptic"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Enigma"/>
@@ -157,7 +160,7 @@
         <Class IRI="#Feistel"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Frequency_analysis"/>
+        <Class IRI="#Frequency-Analysis"/>
     </Declaration>
     <Declaration>
         <Class IRI="#GSM"/>
@@ -169,13 +172,13 @@
         <Class IRI="#HashFunctions"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Higher-order_differential_cryptanalysis"/>
+        <Class IRI="#Higher-Order-Differential-Cryptanalysis"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Impossible_differential_cryptanalysis"/>
+        <Class IRI="#Impossible-Differential-Cryptanalysis"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Index_of_coincidence"/>
+        <Class IRI="#Index-of-Coincidence"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Integrity"/>
@@ -184,7 +187,7 @@
         <Class IRI="#KATSUMI"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Kasiski_examination"/>
+        <Class IRI="#Kasiski-examination"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Kerberos"/>
@@ -205,13 +208,13 @@
         <Class IRI="#MAGENTA"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Man_in_the_middle"/>
+        <Class IRI="#Man-in-the-Middle"/>
     </Declaration>
     <Declaration>
         <Class IRI="#MathematicalAnalysis"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Merkle_Hellman_knapsack"/>
+        <Class IRI="#Merkle-Hellman-Knapsack"/>
     </Declaration>
     <Declaration>
         <Class IRI="#MonoAlphabetic"/>
@@ -229,7 +232,7 @@
         <Class IRI="#OTP"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ParkerianHexad"/>
+        <Class IRI="#Parkerian-Hexad"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Passive"/>
@@ -265,13 +268,13 @@
         <Class IRI="#Scytale"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Search_in_key_space"/>
+        <Class IRI="#Search-in-key-space"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Simon"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Slide_attack"/>
+        <Class IRI="#Slide-attack"/>
     </Declaration>
     <Declaration>
         <Class IRI="#SocialEngineering"/>
@@ -280,7 +283,7 @@
         <Class IRI="#StreamCipher"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Strong_Resistance"/>
+        <Class IRI="#Strong-Resistance"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Substitution"/>
@@ -298,7 +301,7 @@
         <Class IRI="#TLS"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Telephone_tapping"/>
+        <Class IRI="#Telephone-tapping"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Text-autokey"/>
@@ -313,7 +316,7 @@
         <Class IRI="#TrojanHorse"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Truncated_differential_cryptanalysis"/>
+        <Class IRI="#Truncated-Differential-Cryptanalysis"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Twofish"/>
@@ -340,10 +343,10 @@
         <Class IRI="#WEP"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Weak_Resistance"/>
+        <Class IRI="#Weak-Resistance"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Wireless_card"/>
+        <Class IRI="#Wireless-Card"/>
     </Declaration>
     <Declaration>
         <Class IRI="#XOR"/>
@@ -355,11 +358,12 @@
         <Class IRI="#Zodiac"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#collision_weak_attack"/>
-    </Declaration>
-    <Declaration>
         <AnnotationProperty IRI="#reference"/>
     </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#OTP"/>
+        <Class IRI="#UnconditionalSecurity"/>
+    </EquivalentClasses>
     <SubClassOf>
         <Class IRI="#3DES"/>
         <Class IRI="#Feistel"/>
@@ -397,7 +401,7 @@
         <Class IRI="#PolyAlphabetic"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Alberti&apos;s_disk"/>
+        <Class IRI="#Alberti&apos;s-Disk"/>
         <Class IRI="#Devices"/>
     </SubClassOf>
     <SubClassOf>
@@ -413,16 +417,35 @@
         <Class IRI="#Cryptography"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Asymmetric"/>
+        <ObjectComplementOf>
+            <Class IRI="#Symmetric"/>
+        </ObjectComplementOf>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Asynchronous"/>
         <Class IRI="#StreamCipher"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Asynchronous"/>
+        <ObjectComplementOf>
+            <Class IRI="#Synchronous"/>
+        </ObjectComplementOf>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Attacks"/>
         <Class IRI="#Cryptology"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Attacks"/>
+        <ObjectUnionOf>
+            <Class IRI="#Active"/>
+            <Class IRI="#Passive"/>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Authenticity"/>
-        <Class IRI="#ParkerianHexad"/>
+        <Class IRI="#Parkerian-Hexad"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#AutoKey"/>
@@ -430,14 +453,14 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Availability"/>
-        <Class IRI="#ParkerianHexad"/>
+        <Class IRI="#Parkerian-Hexad"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Baiting"/>
         <Class IRI="#SocialEngineering"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Biclique_attack"/>
+        <Class IRI="#Biclique-attack"/>
         <Class IRI="#Active"/>
     </SubClassOf>
     <SubClassOf>
@@ -458,39 +481,59 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#BruteForceAttacks"/>
-        <Class IRI="#Search_in_key_space"/>
+        <Class IRI="#Search-in-key-space"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Caesar"/>
         <Class IRI="#MonoAlphabetic"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Collision_Resistant"/>
+        <Class IRI="#Collision-Resistant"/>
         <Class IRI="#DesirableProperties"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Collision_attack"/>
+        <Class IRI="#Collision-Resistant"/>
+        <ObjectUnionOf>
+            <Class IRI="#Strong-Resistance"/>
+            <Class IRI="#Weak-Resistance"/>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Collision-attack"/>
         <Class IRI="#Active"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Collision_strong_attack"/>
-        <Class IRI="#Collision_attack"/>
+        <Class IRI="#Collision-strong-attack"/>
+        <Class IRI="#Collision-attack"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Computational_Security"/>
+        <Class IRI="#Collision-weak-attack"/>
+        <Class IRI="#Collision-attack"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Computational-Security"/>
         <Class IRI="#DesirableProperties"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Confidentiality"/>
-        <Class IRI="#ParkerianHexad"/>
+        <Class IRI="#Parkerian-Hexad"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Cool_boot_attack"/>
+        <Class IRI="#Cool-boot-attack"/>
         <Class IRI="#Active"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Cryptography"/>
         <Class IRI="#Cryptology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cryptography"/>
+        <ObjectUnionOf>
+            <Class IRI="#Asymmetric"/>
+            <Class IRI="#DesirableProperties"/>
+            <Class IRI="#HashFunctions"/>
+            <Class IRI="#Symmetric"/>
+        </ObjectUnionOf>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Cryptology"/>
@@ -510,10 +553,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#DictionaryAttacks"/>
-        <Class IRI="#Search_in_key_space"/>
+        <Class IRI="#Search-in-key-space"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Differential_cryptoanalysis"/>
+        <Class IRI="#Differential-Cryptanalysis"/>
         <Class IRI="#Active"/>
     </SubClassOf>
     <SubClassOf>
@@ -525,7 +568,7 @@
         <Class IRI="#Protocols"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Easy_and_Fast_to_calculate"/>
+        <Class IRI="#Easy-and-Fast-to-calculate"/>
         <Class IRI="#DesirableProperties"/>
     </SubClassOf>
     <SubClassOf>
@@ -537,7 +580,7 @@
         <Class IRI="#Asymmetric"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#ElGamal_elliptic"/>
+        <Class IRI="#ElGamal-Elliptic"/>
         <Class IRI="#Asymmetric"/>
     </SubClassOf>
     <SubClassOf>
@@ -549,11 +592,11 @@
         <Class IRI="#BlockCipher"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Fixed-length_digest"/>
+        <Class IRI="#Fixed-length-digest"/>
         <Class IRI="#DesirableProperties"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Frequency_analysis"/>
+        <Class IRI="#Frequency-Analysis"/>
         <Class IRI="#MathematicalAnalysis"/>
     </SubClassOf>
     <SubClassOf>
@@ -566,7 +609,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#GuessingAttacks"/>
-        <Class IRI="#Search_in_key_space"/>
+        <Class IRI="#Search-in-key-space"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#HAVAL"/>
@@ -577,27 +620,27 @@
         <Class IRI="#Cryptography"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Higher-order_differential_cryptanalysis"/>
-        <Class IRI="#Differential_cryptoanalysis"/>
+        <Class IRI="#Higher-Order-Differential-Cryptanalysis"/>
+        <Class IRI="#Differential-Cryptanalysis"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Impossible_differential_cryptanalysis"/>
-        <Class IRI="#Differential_cryptoanalysis"/>
+        <Class IRI="#Impossible-Differential-Cryptanalysis"/>
+        <Class IRI="#Differential-Cryptanalysis"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Index_of_coincidence"/>
+        <Class IRI="#Index-of-Coincidence"/>
         <Class IRI="#MathematicalAnalysis"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Integrity"/>
-        <Class IRI="#ParkerianHexad"/>
+        <Class IRI="#Parkerian-Hexad"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#KATSUMI"/>
         <Class IRI="#SubstitutionPermutation"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Kasiski_examination"/>
+        <Class IRI="#Kasiski-examination"/>
         <Class IRI="#MathematicalAnalysis"/>
     </SubClassOf>
     <SubClassOf>
@@ -641,7 +684,7 @@
         <Class IRI="#MD"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Man_in_the_middle"/>
+        <Class IRI="#Man-in-the-Middle"/>
         <Class IRI="#Eavesdropping"/>
     </SubClassOf>
     <SubClassOf>
@@ -649,7 +692,7 @@
         <Class IRI="#Active"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Merkle_Hellman_knapsack"/>
+        <Class IRI="#Merkle-Hellman-Knapsack"/>
         <Class IRI="#Asymmetric"/>
     </SubClassOf>
     <SubClassOf>
@@ -658,7 +701,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#N-gram"/>
-        <Class IRI="#Frequency_analysis"/>
+        <Class IRI="#Frequency-Analysis"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Nimbus"/>
@@ -666,7 +709,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Non-Repudiation"/>
-        <Class IRI="#ParkerianHexad"/>
+        <Class IRI="#Parkerian-Hexad"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#OTP"/>
@@ -677,7 +720,7 @@
         <Class IRI="#HashFunctions"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#ParkerianHexad"/>
+        <Class IRI="#Parkerian-Hexad"/>
         <Class IRI="#DesirableProperties"/>
     </SubClassOf>
     <SubClassOf>
@@ -694,7 +737,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Possession"/>
-        <Class IRI="#ParkerianHexad"/>
+        <Class IRI="#Parkerian-Hexad"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Pretexting"/>
@@ -813,7 +856,7 @@
         <Class IRI="#Transposition"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Search_in_key_space"/>
+        <Class IRI="#Search-in-key-space"/>
         <Class IRI="#Active"/>
     </SubClassOf>
     <SubClassOf>
@@ -821,7 +864,7 @@
         <Class IRI="#Feistel"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Slide_attack"/>
+        <Class IRI="#Slide-attack"/>
         <Class IRI="#Active"/>
     </SubClassOf>
     <SubClassOf>
@@ -833,12 +876,26 @@
         <Class IRI="#Symmetric"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Strong_Resistance"/>
-        <Class IRI="#Collision_Resistant"/>
+        <Class IRI="#StreamCipher"/>
+        <ObjectUnionOf>
+            <Class IRI="#Asynchronous"/>
+            <Class IRI="#Synchronous"/>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Strong-Resistance"/>
+        <Class IRI="#Collision-Resistant"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Substitution"/>
         <Class IRI="#Synchronous"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Substitution"/>
+        <ObjectUnionOf>
+            <Class IRI="#MonoAlphabetic"/>
+            <Class IRI="#PolyAlphabetic"/>
+        </ObjectUnionOf>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SubstitutionPermutation"/>
@@ -849,15 +906,29 @@
         <Class IRI="#Cryptography"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Symmetric"/>
+        <ObjectUnionOf>
+            <Class IRI="#BlockCipher"/>
+            <Class IRI="#StreamCipher"/>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Synchronous"/>
         <Class IRI="#StreamCipher"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Synchronous"/>
+        <ObjectUnionOf>
+            <Class IRI="#Substitution"/>
+            <Class IRI="#Transposition"/>
+        </ObjectUnionOf>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#TLS"/>
         <Class IRI="#RC4"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Telephone_tapping"/>
+        <Class IRI="#Telephone-tapping"/>
         <Class IRI="#Eavesdropping"/>
     </SubClassOf>
     <SubClassOf>
@@ -889,8 +960,8 @@
         <Class IRI="#SocialEngineering"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Truncated_differential_cryptanalysis"/>
-        <Class IRI="#Differential_cryptoanalysis"/>
+        <Class IRI="#Truncated-Differential-Cryptanalysis"/>
+        <Class IRI="#Differential-Cryptanalysis"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Twofish"/>
@@ -914,7 +985,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Utility"/>
-        <Class IRI="#ParkerianHexad"/>
+        <Class IRI="#Parkerian-Hexad"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Vigenere"/>
@@ -933,11 +1004,11 @@
         <Class IRI="#HashFunctions"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Weak_Resistance"/>
-        <Class IRI="#Collision_Resistant"/>
+        <Class IRI="#Weak-Resistance"/>
+        <Class IRI="#Collision-Resistant"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Wireless_card"/>
+        <Class IRI="#Wireless-Card"/>
         <Class IRI="#Devices"/>
     </SubClassOf>
     <SubClassOf>
@@ -952,10 +1023,146 @@
         <Class IRI="#Zodiac"/>
         <Class IRI="#Feistel"/>
     </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#collision_weak_attack"/>
-        <Class IRI="#Collision_attack"/>
-    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#3DES"/>
+        <Class IRI="#DES"/>
+        <Class IRI="#Loki"/>
+        <Class IRI="#Lucifer"/>
+        <Class IRI="#Simon"/>
+        <Class IRI="#Zodiac"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#AES"/>
+        <Class IRI="#ARIA"/>
+        <Class IRI="#Anubis"/>
+        <Class IRI="#Blowfish"/>
+        <Class IRI="#KATSUMI"/>
+        <Class IRI="#MAGENTA"/>
+        <Class IRI="#Nimbus"/>
+        <Class IRI="#Treyfer"/>
+        <Class IRI="#Twofish"/>
+        <Class IRI="#UES"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Accountability"/>
+        <Class IRI="#Anonymity"/>
+        <Class IRI="#Broadcasting"/>
+        <Class IRI="#Collision-Resistant"/>
+        <Class IRI="#Computational-Security"/>
+        <Class IRI="#Easy-and-Fast-to-calculate"/>
+        <Class IRI="#Fixed-length-digest"/>
+        <Class IRI="#Parkerian-Hexad"/>
+        <Class IRI="#Unidirectional"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Active"/>
+        <Class IRI="#Passive"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Affine"/>
+        <Class IRI="#Caesar"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Alberti"/>
+        <Class IRI="#AutoKey"/>
+        <Class IRI="#Vigenere"/>
+        <Class IRI="#XOR"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Asymmetric"/>
+        <Class IRI="#DesirableProperties"/>
+        <Class IRI="#HashFunctions"/>
+        <Class IRI="#Symmetric"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Asynchronous"/>
+        <Class IRI="#Synchronous"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Authenticity"/>
+        <Class IRI="#Availability"/>
+        <Class IRI="#Confidentiality"/>
+        <Class IRI="#Integrity"/>
+        <Class IRI="#Non-Repudiation"/>
+        <Class IRI="#Possession"/>
+        <Class IRI="#Utility"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Biclique-attack"/>
+        <Class IRI="#Collision-attack"/>
+        <Class IRI="#Cool-boot-attack"/>
+        <Class IRI="#Differential-Cryptanalysis"/>
+        <Class IRI="#MathematicalAnalysis"/>
+        <Class IRI="#Search-in-key-space"/>
+        <Class IRI="#Slide-attack"/>
+        <Class IRI="#SocialEngineering"/>
+        <Class IRI="#XSL"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BlockCipher"/>
+        <Class IRI="#StreamCipher"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ElGamal"/>
+        <Class IRI="#ElGamal-Elliptic"/>
+        <Class IRI="#Merkle-Hellman-Knapsack"/>
+        <Class IRI="#RSA"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#GOST"/>
+        <Class IRI="#HAVAL"/>
+        <Class IRI="#MD"/>
+        <Class IRI="#PANAMA"/>
+        <Class IRI="#RIPEMD"/>
+        <Class IRI="#RTR0"/>
+        <Class IRI="#RadioGatun"/>
+        <Class IRI="#SHA"/>
+        <Class IRI="#Tiger"/>
+        <Class IRI="#WHIRLPOOL"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Key-autokey"/>
+        <Class IRI="#Text-autokey"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#MD2"/>
+        <Class IRI="#MD4"/>
+        <Class IRI="#MD5"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#MonoAlphabetic"/>
+        <Class IRI="#PolyAlphabetic"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#RIPEMD-128"/>
+        <Class IRI="#RIPEMD-128/256"/>
+        <Class IRI="#RIPEMD-160"/>
+        <Class IRI="#RIPEMD-320"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#SHA-0"/>
+        <Class IRI="#SHA-1"/>
+        <Class IRI="#SHA-2"/>
+        <Class IRI="#SHA-3"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#SHA-2-224"/>
+        <Class IRI="#SHA-2-256"/>
+        <Class IRI="#SHA-2-384"/>
+        <Class IRI="#SHA-2-512"/>
+        <Class IRI="#SHA-2-512/224"/>
+        <Class IRI="#SHA-2-512/256"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#SHA-3-224"/>
+        <Class IRI="#SHA-3-256"/>
+        <Class IRI="#SHA-3-384"/>
+        <Class IRI="#SHA-3-512"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Substitution"/>
+        <Class IRI="#Transposition"/>
+    </DisjointClasses>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
         <IRI>#3DES</IRI>
@@ -1049,12 +1256,12 @@ The algorithm uses a substitution-permutation network structure based on AES. Th
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
-        <IRI>#Alberti&apos;s_disk</IRI>
+        <IRI>#Alberti&apos;s-Disk</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">http://es.wikipedia.org/wiki/Cifrado_de_Alberti</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Alberti&apos;s_disk</IRI>
+        <IRI>#Alberti&apos;s-Disk</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Device that allows to implement the Alberti&apos;s algorithm</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -1140,12 +1347,12 @@ In this attack, the attacker leaves a malware infected floppy disk, CD-ROM, or U
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
-        <IRI>#Biclique_attack</IRI>
+        <IRI>#Biclique-attack</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/Biclique_attack</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Biclique_attack</IRI>
+        <IRI>#Biclique-attack</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">The biclique attack is a method of cryptanalysis known for having broken both full AES and full IDEA, though only with slight advantage over brute force. It has also been applied to the KASUMI cipher and preimage resistance of the Skein-512 and SHA-2 hash functions.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -1207,27 +1414,32 @@ In this attack, the attacker leaves a malware infected floppy disk, CD-ROM, or U
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Collision_Resistant</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">A h function will never be an injective function, therefore, always will exist collisions. Known  the pair (D, D&apos;) such that h(D)=h(D&apos;) we can distinguish between weak resistance and strong resistance.</Literal>
+        <IRI>#Collision-Resistant</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A hash function will never be an injective function, therefore always will exist collisions. Known  the pair (D, D&apos;) such that h(D)=h(D&apos;) we can distinguish between weak resistance and strong resistance.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
-        <IRI>#Collision_attack</IRI>
+        <IRI>#Collision-attack</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/Collision_attack</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Collision_attack</IRI>
+        <IRI>#Collision-attack</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A collision attack on a cryptographic hash tries to find two inputs producing the same hash value, i.e. a hash collision. In contrast to a preimage attack the hash value is not specified.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Collision_strong_attack</IRI>
+        <IRI>#Collision-strong-attack</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Given two different prefixes p1, p2 find two appendages m1 and m2 such that hash(p1 ∥ m1) = hash(p2 ∥ m2) (where ∥ is the concatenation operation).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Computational_Security</IRI>
+        <IRI>#Collision-weak-attack</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Find two different messages m1 and m2 such that hash(m1) = hash(m2).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Computational-Security</IRI>
         <Literal datatypeIRI="&xsd;string">Said of a cipher that cannot be broken with the current computer technology within a period short enough to be practicable</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -1237,12 +1449,12 @@ In this attack, the attacker leaves a malware infected floppy disk, CD-ROM, or U
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
-        <IRI>#Cool_boot_attack</IRI>
+        <IRI>#Cool-boot-attack</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/Cold_boot_attack</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Cool_boot_attack</IRI>
+        <IRI>#Cool-boot-attack</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">In cryptography, a cold boot attack (or to a lesser extent, a platform reset attack) is a type of side channel attack in which an attacker with physical access to a computer is able to retrieve encryption keys from a running operating system after using a cold reboot to restart the machine. The attack relies on the data remanence property of DRAM and SRAM to retrieve memory contents which remain readable in the seconds to minutes after power has been removed.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -1268,7 +1480,7 @@ In this attack, the attacker leaves a malware infected floppy disk, CD-ROM, or U
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#DES</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Algorithm based in the Lucifer. Predecesor of 3DES (Triple DES) and AES.</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Algorithm based on the Lucifer cipher. Predecesor of 3DES (Triple DES) and AES.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1292,12 +1504,12 @@ In this attack, the attacker leaves a malware infected floppy disk, CD-ROM, or U
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
-        <IRI>#Differential_cryptoanalysis</IRI>
+        <IRI>#Differential-Cryptanalysis</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/Differential_cryptanalysis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Differential_cryptoanalysis</IRI>
+        <IRI>#Differential-Cryptanalysis</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Differential cryptanalysis is a general form of cryptanalysis applicable primarily to block ciphers, but also to stream ciphers and cryptographic hash functions. In the broadest sense, it is the study of how differences in an input can affect the resultant difference at the output. In the case of a block cipher, it refers to a set of techniques for tracing differences through the network of transformations, discovering where the cipher exhibits non-random behavior, and exploiting such properties to recover the secret key.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -1322,7 +1534,7 @@ In this attack, the attacker leaves a malware infected floppy disk, CD-ROM, or U
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Easy_and_Fast_to_calculate</IRI>
+        <IRI>#Easy-and-Fast-to-calculate</IRI>
         <Literal datatypeIRI="&xsd;string">The algorithm is easy to calculate and fast to execute.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -1347,7 +1559,7 @@ In this attack, the attacker leaves a malware infected floppy disk, CD-ROM, or U
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#ElGamal_elliptic</IRI>
+        <IRI>#ElGamal-Elliptic</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Is like the classical ElGamal algorithm but uses elliptic arithmetic.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -1362,17 +1574,17 @@ In this attack, the attacker leaves a malware infected floppy disk, CD-ROM, or U
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Fixed-length_digest</IRI>
+        <IRI>#Fixed-length-digest</IRI>
         <Literal datatypeIRI="&xsd;string">Summary size of h(D) should be fixed (defined by function), without depending on the size of D</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
-        <IRI>#Frequency_analysis</IRI>
+        <IRI>#Frequency-Analysis</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/Frequency_analysis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Frequency_analysis</IRI>
+        <IRI>#Frequency-Analysis</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Is the study of the frequency of letters or groups of letters in a ciphertext. The method is used as an aid to breaking classical ciphers.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -1422,32 +1634,32 @@ In this attack, the attacker leaves a malware infected floppy disk, CD-ROM, or U
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
-        <IRI>#Higher-order_differential_cryptanalysis</IRI>
+        <IRI>#Higher-Order-Differential-Cryptanalysis</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/Higher-order_differential_cryptanalysis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Higher-order_differential_cryptanalysis</IRI>
+        <IRI>#Higher-Order-Differential-Cryptanalysis</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Higher-order differential cryptanalysis is a generalization of differential cryptanalysis, an attack against block ciphers. Developed in 1994 by Lars Knudsen, the technique has been applied to a number of ciphers. Whereas ordinary differential cryptanalysis analyzes the differences between two texts, the higher-order variant considers differences between differences, etc. It has been shown to be more powerful than a first-order attack in some cases (see KN-Cipher).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
-        <IRI>#Impossible_differential_cryptanalysis</IRI>
+        <IRI>#Impossible-Differential-Cryptanalysis</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/Impossible_differential_cryptanalysis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Impossible_differential_cryptanalysis</IRI>
+        <IRI>#Impossible-Differential-Cryptanalysis</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">In cryptography, impossible differential cryptanalysis is a form of differential cryptanalysis for block ciphers. While ordinary differential cryptanalysis tracks differences that propagate through the cipher with greater than expected probability, impossible differential cryptanalysis exploits differences that are impossible (having probability 0) at some intermediate state of the cipher algorithm.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
-        <IRI>#Index_of_coincidence</IRI>
+        <IRI>#Index-of-Coincidence</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/Index_of_coincidence</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Index_of_coincidence</IRI>
+        <IRI>#Index-of-Coincidence</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Index of coincidence counting is the technique (invented by William F. Friedman) of putting two texts side-by-side and counting the number of times that identical letters appear in the same position in both texts. This count, either as a ratio of the total or normalized by dividing by the expected count for a random source model, is known as the index of coincidence.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -1467,12 +1679,12 @@ In this attack, the attacker leaves a malware infected floppy disk, CD-ROM, or U
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
-        <IRI>#Kasiski_examination</IRI>
+        <IRI>#Kasiski-examination</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/Kasiski_examination</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Kasiski_examination</IRI>
+        <IRI>#Kasiski-examination</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral"> Kasiski examination (also referred to as Kasiski&apos;s Test or Kasiski&apos;s Method) is a method of attacking polyalphabetic substitution ciphers, such as the Vigenère cipher. It was first published by Friedrich Kasiski in 1863, but seems to have been independently discovered by Charles Babbage as early as 1846.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -1567,12 +1779,12 @@ In this attack, the attacker leaves a malware infected floppy disk, CD-ROM, or U
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
-        <IRI>#Man_in_the_middle</IRI>
+        <IRI>#Man-in-the-Middle</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/Man-in-the-middle_attack</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Man_in_the_middle</IRI>
+        <IRI>#Man-in-the-Middle</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The Man-in-the-Middle attack (often abbreviated MITM, MitM, MIM, MiM, MITMA) in Cryptography and Computer Security is a form of active eavesdropping in which the attacker makes independent connections with the victims and relays messages between them, making them believe that they are talking directly to each other over a private connection, when in fact the entire conversation is controlled by the attacker. The attacker must be able to intercept all messages going between the two victims and inject new ones, which is straightforward in many circumstances (for example, an attacker within reception range of an unencrypted Wi-Fi wireless access point, can insert himself as a man-in-the-middle).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -1582,7 +1794,7 @@ In this attack, the attacker leaves a malware infected floppy disk, CD-ROM, or U
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Merkle_Hellman_knapsack</IRI>
+        <IRI>#Merkle-Hellman-Knapsack</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Based in the subset-sum problem, probably it was the first algorithm with public key.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -1636,7 +1848,7 @@ The one-time pad is unconditionally secure.
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
-        <IRI>#ParkerianHexad</IRI>
+        <IRI>#Parkerian-Hexad</IRI>
         <Literal datatypeIRI="&xsd;string">https://en.wikipedia.org/wiki/Parkerian_hexad</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -1850,7 +2062,7 @@ Although RadioGatún is a derivative of Panama, a stream cipher and hash constru
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Search_in_key_space</IRI>
+        <IRI>#Search-in-key-space</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">The class of attacks that systematically search possible keys. There are different types according to the size of the search space.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -1865,12 +2077,12 @@ Although RadioGatún is a derivative of Panama, a stream cipher and hash constru
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
-        <IRI>#Slide_attack</IRI>
+        <IRI>#Slide-attack</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/Slide_attack</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Slide_attack</IRI>
+        <IRI>#Slide-attack</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">The slide attack is a form of cryptanalysis designed to deal with the prevailing idea that even weak ciphers can become very strong by increasing the number of rounds, which can ward off a differential attack. The slide attack works in such a way as to make the number of rounds in a cipher irrelevant. Rather than looking at the data-randomizing aspects of the block cipher, the slide attack works by analyzing the key schedule and exploiting weaknesses in it to break the cipher. The most common one is the keys repeating in a cyclic manner.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -1895,7 +2107,7 @@ Although RadioGatún is a derivative of Panama, a stream cipher and hash constru
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Strong_Resistance</IRI>
+        <IRI>#Strong-Resistance</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Should be computationally infeasible to find D and D&apos; such that h(D) = h(D&apos;)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -1941,12 +2153,12 @@ These properties are the ones that try to support the security to the system.</L
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
-        <IRI>#Telephone_tapping</IRI>
+        <IRI>#Telephone-tapping</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/Telephone_tapping</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Telephone_tapping</IRI>
+        <IRI>#Telephone-tapping</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Telephone tapping (also wire tapping or wiretapping in American English) is the monitoring of telephone and Internet conversations by a third party, often by covert means. The wire tap received its name because, historically, the monitoring connection was an actual electrical tap on the telephone line. Legal wiretapping by a government agency is also called lawful interception. Passive wiretapping monitors or records the traffic, while active wiretapping alters or otherwise affects it.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -2001,12 +2213,12 @@ These properties are the ones that try to support the security to the system.</L
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
-        <IRI>#Truncated_differential_cryptanalysis</IRI>
+        <IRI>#Truncated-Differential-Cryptanalysis</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/Truncated_differential_cryptanalysis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Truncated_differential_cryptanalysis</IRI>
+        <IRI>#Truncated-Differential-Cryptanalysis</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">In cryptography, truncated differential cryptanalysis is a generalization of differential cryptanalysis, an attack against block ciphers. Lars Knudsen developed the technique in 1994. Whereas ordinary differential cryptanalysis analyzes the full difference between two texts, the truncated variant considers differences that are only partially determined. That is, the attack makes predictions of only some of the bits instead of the full block. This technique has been applied to SAFER, IDEA, Skipjack, E2, Twofish, Camellia, CRYPTON, and even the stream cipher Salsa20.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -2047,7 +2259,7 @@ These properties are the ones that try to support the security to the system.</L
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Unidirectional</IRI>
-        <Literal datatypeIRI="&xsd;string">Known summarizes h(D) should be computationally infeasible to find D</Literal>
+        <Literal datatypeIRI="&xsd;string">Knowing the hash of a document D, h(D), does not give any information about the original document. Thus, it is computationally infeasible to find D, given h(D).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2096,17 +2308,17 @@ These properties are the ones that try to support the security to the system.</L
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Weak_Resistance</IRI>
+        <IRI>#Weak-Resistance</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Known D shoud be computationally infeasible to find D&apos; such that h(D) = h(D&apos;)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
-        <IRI>#Wireless_card</IRI>
+        <IRI>#Wireless-Card</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">http://en.wikipedia.org/wiki/Wireless_network_interface_controller</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Wireless_card</IRI>
+        <IRI>#Wireless-Card</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Is a network interface which connects computers  in a network without wires.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -2139,11 +2351,6 @@ These properties are the ones that try to support the security to the system.</L
         <IRI>#Zodiac</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">In cryptography, Zodiac is a block cipher designed in 2000 by Chang-Hyi Lee for the Korean firm SoftForum.
 Zodiac uses a 16-round Feistel network structure with key whitening. The round function uses only XORs and S-box lookups. There are two 8×8-bit S-boxes: one based on the discrete exponentiation 45x as in SAFER, the other using the multiplicative inverse in the finite field GF(28), as introduced by SHARK.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#collision_weak_attack</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Find two different messages m1 and m2 such that hash(m1) = hash(m2).</Literal>
     </AnnotationAssertion>
     <SubAnnotationPropertyOf>
         <AnnotationProperty IRI="#reference"/>
