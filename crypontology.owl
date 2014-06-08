@@ -358,6 +358,30 @@
         <Class IRI="#Zodiac"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#basedOn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#basedOnCipher"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#basedOnProtocol"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPerfectSecret"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#resistantTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#threatens"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#vulnerableTo"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty IRI="#reference"/>
     </Declaration>
     <EquivalentClasses>
@@ -1069,6 +1093,14 @@
         <Class IRI="#XOR"/>
     </DisjointClasses>
     <DisjointClasses>
+        <Class IRI="#Alberti&apos;s-Disk"/>
+        <Class IRI="#Bomba"/>
+        <Class IRI="#Enigma"/>
+        <Class IRI="#Lorenz"/>
+        <Class IRI="#Typex"/>
+        <Class IRI="#Wireless-Card"/>
+    </DisjointClasses>
+    <DisjointClasses>
         <Class IRI="#Asymmetric"/>
         <Class IRI="#DesirableProperties"/>
         <Class IRI="#HashFunctions"/>
@@ -1088,6 +1120,12 @@
         <Class IRI="#Utility"/>
     </DisjointClasses>
     <DisjointClasses>
+        <Class IRI="#Baiting"/>
+        <Class IRI="#Phishing"/>
+        <Class IRI="#Pretexting"/>
+        <Class IRI="#TrojanHorse"/>
+    </DisjointClasses>
+    <DisjointClasses>
         <Class IRI="#Biclique-attack"/>
         <Class IRI="#Collision-attack"/>
         <Class IRI="#Cool-boot-attack"/>
@@ -1103,10 +1141,32 @@
         <Class IRI="#StreamCipher"/>
     </DisjointClasses>
     <DisjointClasses>
+        <Class IRI="#BruteForceAttacks"/>
+        <Class IRI="#DictionaryAttacks"/>
+        <Class IRI="#GuessingAttacks"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Collision-strong-attack"/>
+        <Class IRI="#Collision-weak-attack"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ECDH"/>
+        <Class IRI="#ECDSA"/>
+        <Class IRI="#GSM"/>
+        <Class IRI="#Kerberos"/>
+        <Class IRI="#RC4"/>
+        <Class IRI="#SNMP"/>
+    </DisjointClasses>
+    <DisjointClasses>
         <Class IRI="#ElGamal"/>
         <Class IRI="#ElGamal-Elliptic"/>
         <Class IRI="#Merkle-Hellman-Knapsack"/>
         <Class IRI="#RSA"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Frequency-Analysis"/>
+        <Class IRI="#Index-of-Coincidence"/>
+        <Class IRI="#Kasiski-examination"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#GOST"/>
@@ -1121,6 +1181,11 @@
         <Class IRI="#WHIRLPOOL"/>
     </DisjointClasses>
     <DisjointClasses>
+        <Class IRI="#Higher-Order-Differential-Cryptanalysis"/>
+        <Class IRI="#Impossible-Differential-Cryptanalysis"/>
+        <Class IRI="#Truncated-Differential-Cryptanalysis"/>
+    </DisjointClasses>
+    <DisjointClasses>
         <Class IRI="#Key-autokey"/>
         <Class IRI="#Text-autokey"/>
     </DisjointClasses>
@@ -1128,6 +1193,10 @@
         <Class IRI="#MD2"/>
         <Class IRI="#MD4"/>
         <Class IRI="#MD5"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Man-in-the-Middle"/>
+        <Class IRI="#Telephone-tapping"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#MonoAlphabetic"/>
@@ -1160,9 +1229,140 @@
         <Class IRI="#SHA-3-512"/>
     </DisjointClasses>
     <DisjointClasses>
+        <Class IRI="#Strong-Resistance"/>
+        <Class IRI="#Weak-Resistance"/>
+    </DisjointClasses>
+    <DisjointClasses>
         <Class IRI="#Substitution"/>
         <Class IRI="#Transposition"/>
     </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Tiger-192/128/160"/>
+        <Class IRI="#Tiger2"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#basedOnCipher"/>
+        <ObjectProperty IRI="#basedOn"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#basedOnProtocol"/>
+        <ObjectProperty IRI="#basedOn"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPerfectSecret"/>
+        <ObjectProperty IRI="#has"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#threatens"/>
+        <ObjectProperty IRI="#vulnerableTo"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasPerfectSecret"/>
+    </FunctionalObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#basedOn"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#basedOnCipher"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#basedOnProtocol"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#has"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#resistantTo"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#threatens"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#vulnerableTo"/>
+    </AsymmetricObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#basedOnCipher"/>
+        <ObjectUnionOf>
+            <Class IRI="#Asymmetric"/>
+            <Class IRI="#Symmetric"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#basedOnProtocol"/>
+        <Class IRI="#Protocols"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPerfectSecret"/>
+        <ObjectUnionOf>
+            <Class IRI="#Asymmetric"/>
+            <Class IRI="#Symmetric"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#resistantTo"/>
+        <ObjectUnionOf>
+            <Class IRI="#Asymmetric"/>
+            <Class IRI="#Devices"/>
+            <Class IRI="#HashFunctions"/>
+            <Class IRI="#Protocols"/>
+            <Class IRI="#Symmetric"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#threatens"/>
+        <Class IRI="#Attacks"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#vulnerableTo"/>
+        <ObjectUnionOf>
+            <Class IRI="#Asymmetric"/>
+            <Class IRI="#Devices"/>
+            <Class IRI="#HashFunctions"/>
+            <Class IRI="#Protocols"/>
+            <Class IRI="#Symmetric"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#basedOnCipher"/>
+        <ObjectUnionOf>
+            <Class IRI="#Asymmetric"/>
+            <Class IRI="#Symmetric"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#basedOnProtocol"/>
+        <Class IRI="#Protocols"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#resistantTo"/>
+        <Class IRI="#Attacks"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#threatens"/>
+        <ObjectUnionOf>
+            <Class IRI="#Asymmetric"/>
+            <Class IRI="#Devices"/>
+            <Class IRI="#HashFunctions"/>
+            <Class IRI="#Protocols"/>
+            <Class IRI="#Symmetric"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#vulnerableTo"/>
+        <Class IRI="#Attacks"/>
+    </ObjectPropertyRange>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="#basedOnCipher"/>
+        <ObjectProperty IRI="#basedOnProtocol"/>
+    </DisjointObjectProperties>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#reference"/>
         <IRI>#3DES</IRI>
@@ -2351,6 +2551,46 @@ These properties are the ones that try to support the security to the system.</L
         <IRI>#Zodiac</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">In cryptography, Zodiac is a block cipher designed in 2000 by Chang-Hyi Lee for the Korean firm SoftForum.
 Zodiac uses a 16-round Feistel network structure with key whitening. The round function uses only XORs and S-box lookups. There are two 8×8-bit S-boxes: one based on the discrete exponentiation 45x as in SAFER, the other using the multiplicative inverse in the finite field GF(28), as introduced by SHARK.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#basedOn</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Defines a binary predicate to indicate what an object is inspired by. Used mainly to stablish relations between various versions or models of ciphers or protocols.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#basedOnCipher</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Binary predicate to indicate that a cipher is inspired by other ciphers.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#basedOnProtocol</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Binary predicate to indicate that a protocol is inspired by other protocols.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Defines a binary predicate to indicate that something owns or posseses something. Useful to define properties of objects</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasPerfectSecret</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Indicates that a cipher is unbreakable, even with infinite computational resources.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#resistantTo</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Defines a binary predicate to indicate that a system&apos;s security is resistant to some attack(s).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#threatens</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Defines the inverse binary predicate of being vulnerable.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#vulnerableTo</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Defines a binary predicate to indicate that a system&apos;s security is vulnerable to some attack(s).</Literal>
     </AnnotationAssertion>
     <SubAnnotationPropertyOf>
         <AnnotationProperty IRI="#reference"/>
