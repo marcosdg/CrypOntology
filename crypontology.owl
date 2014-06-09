@@ -1560,6 +1560,12 @@
     <InverseFunctionalObjectProperty>
         <ObjectProperty IRI="#basedOnProtocol"/>
     </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#isFasterThan"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#isLessInsecureThan"/>
+    </InverseFunctionalObjectProperty>
     <AsymmetricObjectProperty>
         <ObjectProperty IRI="#basedOn"/>
     </AsymmetricObjectProperty>
@@ -1596,6 +1602,10 @@
     <AsymmetricObjectProperty>
         <ObjectProperty IRI="#vulnerableTo"/>
     </AsymmetricObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#basedOn"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#basedOnCipher"/>
         <ObjectUnionOf>
@@ -1655,6 +1665,10 @@
             <Class IRI="#Symmetric"/>
         </ObjectUnionOf>
     </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#basedOn"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#basedOnCipher"/>
         <ObjectUnionOf>
@@ -2941,7 +2955,7 @@ Zodiac uses a 16-round Feistel network structure with key whitening. The round f
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#hasProperty</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Defines a binary predicate to indicate that something owns or posseses something. Useful to define properties of objects</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Defines a binary predicate to indicate that something owns or posses something. Useful to define properties of objects</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
