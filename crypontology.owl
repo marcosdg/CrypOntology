@@ -1548,8 +1548,8 @@
         <ObjectProperty IRI="#isBetterThan"/>
     </SubObjectPropertyOf>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#vulnerableTo"/>
         <ObjectProperty IRI="#threatens"/>
+        <ObjectProperty IRI="#vulnerableTo"/>
     </InverseObjectProperties>
     <AsymmetricObjectProperty>
         <ObjectProperty IRI="#basedOn"/>
@@ -1558,10 +1558,25 @@
         <ObjectProperty IRI="#basedOnCipher"/>
     </AsymmetricObjectProperty>
     <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#basedOnHash"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
         <ObjectProperty IRI="#basedOnProtocol"/>
     </AsymmetricObjectProperty>
     <AsymmetricObjectProperty>
         <ObjectProperty IRI="#hasProperty"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#implements"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isBetterThan"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isFasterThan"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isLessInsecureThan"/>
     </AsymmetricObjectProperty>
     <AsymmetricObjectProperty>
         <ObjectProperty IRI="#resistantTo"/>
@@ -1597,6 +1612,14 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isBetterThan"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isFasterThan"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isLessInsecureThan"/>
         <Class abbreviatedIRI="owl:Thing"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -1652,6 +1675,14 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isBetterThan"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isFasterThan"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isLessInsecureThan"/>
         <Class abbreviatedIRI="owl:Thing"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -2899,6 +2930,11 @@ Zodiac uses a 16-round Feistel network structure with key whitening. The round f
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#implements</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Indicates what mechanisms a protocol implements</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isBetterThan</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Generic comparative binary predicates</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
