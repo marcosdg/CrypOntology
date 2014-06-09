@@ -1548,9 +1548,18 @@
         <ObjectProperty IRI="#isBetterThan"/>
     </SubObjectPropertyOf>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#threatens"/>
         <ObjectProperty IRI="#vulnerableTo"/>
+        <ObjectProperty IRI="#threatens"/>
     </InverseObjectProperties>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#basedOnCipher"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#basedOnHash"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#basedOnProtocol"/>
+    </InverseFunctionalObjectProperty>
     <AsymmetricObjectProperty>
         <ObjectProperty IRI="#basedOn"/>
     </AsymmetricObjectProperty>
@@ -1705,6 +1714,14 @@
     </ObjectPropertyRange>
     <DisjointObjectProperties>
         <ObjectProperty IRI="#basedOnCipher"/>
+        <ObjectProperty IRI="#basedOnHash"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="#basedOnCipher"/>
+        <ObjectProperty IRI="#basedOnProtocol"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="#basedOnHash"/>
         <ObjectProperty IRI="#basedOnProtocol"/>
     </DisjointObjectProperties>
     <AnnotationAssertion>
